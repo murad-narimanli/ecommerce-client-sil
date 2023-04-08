@@ -1,8 +1,11 @@
 import React from "react";
 import { Navbar,  Nav } from "react-bootstrap";
 import "../../assets/scss/Header.scss"
-
+import {useLocation, NavLink} from "react-router-dom"
 function Menu() {
+// let location =useLoaction()
+// let {pathname}=location
+
   return (
     <div className="container">
       <Navbar expand="lg">
@@ -10,11 +13,13 @@ function Menu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse  >
           <Nav className="me-2">
-            <Nav.Link href="#link">Blog Page</Nav.Link>
-            <Nav.Link href="#link">Vegetables & Fruits</Nav.Link>
-            <Nav.Link href="#link">FoodGrains, Oil & Masala</Nav.Link>
-            <Nav.Link href="#link">Shop</Nav.Link>
-            <Nav.Link href="#link">Contact us</Nav.Link>           
+           <NavLink  to='./'> <Nav.Link href="#link">Home</Nav.Link></NavLink>
+           <NavLink to='./aboutus'> <Nav.Link href="#link" >AboutUs</Nav.Link></NavLink>
+           <NavLink to='./cart'> <Nav.Link href="#link"   >Cart</Nav.Link></NavLink> 
+           <NavLink to='./checkout'> <Nav.Link href="#link" >Checkout</Nav.Link></NavLink>
+           <NavLink to='./contactus'> <Nav.Link href="#link" >Contact us</Nav.Link>     </NavLink>      
+           <NavLink to='./product'> <Nav.Link href="#link" >Product</Nav.Link>     </NavLink>  
+           <NavLink to='./shop'> <Nav.Link href="#link" >Shop</Nav.Link>     </NavLink>          
           </Nav>
         </Navbar.Collapse>
       </Navbar>
