@@ -1,43 +1,32 @@
-// import React from 'react'
-// import { Card } from 'antd';
-
-// const { Meta } = Card;
-// function Blog() {
-//     const image = 'https://example.com/react101.png';
-//   const title = 'React 101';
-//   const date = '01/01/2023';
-//   const author = 'John Doe';
-//   const commentCount = 3;
-//   const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo mi a est posuere, eu accumsan ex molestie. Vivamus a purus turpis. Aenean vitae metus at dolor mollis tristique.';
-
-//   return (
-//     <div>
-//         <Card
-//       hoverable
-//       style={{ width: '100%' }}
-//       cover={<img alt={title} src={image} />}
-//     >
-//       <Meta title={title} />
-//       <p>{date} by {author}</p>
-//       <p>{text}</p>
-//       <p>{commentCount} comments</p>
-//       <a href="#">Read more</a>
-//     </Card>
-      
-//     </div>
-//   )
-// }
-
-// export default Blog
 import React from 'react'
-
+import { Card } from 'antd';
+import "../../assets/scss/Blog.scss"
+import Image from '../../assets/image/image';
+const { Meta } = Card;
 function Blog() {
+    const image = '';
+  const title = 'Üzünüzə qulluq edin';
+  const date = '01/01/2023';
+  const text = 'Mövsüm fərqi olmadan özümüzə və üzümüzə qulluq etmək mütləqdir. Yayda günəş şüalarının faydaları olsa da, düzgün saatlarda günəşlənməsək zərərli tərəfləri ilə qarşılaşarıq....';
+
   return (
-    <div>
+    <div className='container d-flex justify-content-center'>
+
+        <Card
+      hoverable
+      style={{ width: '60%' }}
+      cover={<img alt={title} src={Image.Blogimg0} />}
+    >
+      <Meta title={title} className='pb-3' />
+      <p className='blog-date'>{date}</p>
+      <p>{text}</p>
+      <a href="#" className='blog_btn'>Read more</a>
+    </Card>
       
     </div>
   )
 }
 
-export default Blog
+export default Blog;
+
 

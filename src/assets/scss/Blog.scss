@@ -1,0 +1,26 @@
+$button-background-color: #2FDB00;
+$button-text-color: #fff;
+$button-opacity: 1;
+.blog-date{
+   color: #2FDB00; 
+   font-weight: 500;
+}
+.blog_btn {
+  background-color: $button-background-color;
+  color: $button-text-color;
+  border: none;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 16px;
+  opacity: $button-opacity;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: #2ee600;
+    opacity: 0.8;
+    color:$button-text-color;
+
+  }
+}
