@@ -21,9 +21,58 @@ a.nav-link{
         color: #2fdb00 !important;
     }
 }
+.ant-space{
+  .ant-space-item{
+    margin-right: 5rem;
+    margin-top: 26px;
+
+  }
+
+}
+
+.login-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #6cc32e;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 22px;
+}
 
 
+.login-button:hover {
+  background-color: #3f6c16;
+}
 
+.search-input:hover {
+  border-color: rgb(108, 195, 46);
+}
+.ant-btn-primary{
+  background-color: #6ba537 !important;
+}
+.ant-btn-primary:not(:disabled):hover {
+  background-color: #6ba537 !important;
+}
+
+.ant-input-group{
+  width: 290px;
+}
+//footer
+.application{
+  color: white;
+  background-color: black;
+  padding: 1px 7px;
+}
+.download{
+  font-size: 10px;
+}
 
 @media (max-width: 767.98px) {
   .navbar-expand-sm .navbar-nav .nav-link {
