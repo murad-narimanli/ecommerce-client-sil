@@ -1,5 +1,6 @@
 import { AudioOutlined } from '@ant-design/icons';
 import { Input, Space } from 'antd';
+import '../../assets/scss/Header.scss'
 const { Search } = Input;
 const suffix = (
   <AudioOutlined
@@ -12,10 +13,10 @@ const suffix = (
 const onSearch = (value) => console.log(value);
 const Searchnav = () => (
   <Space direction="vertical">
-<Search
+<Search 
       placeholder="İstədiyiniz məhsulu axtarın"
       enterButton="Search"
-      size="900px"
+      size="100px"
       suffix={suffix}
       onSearch={onSearch}
       style={{ backgroundColor: 'rgb(108, 195, 46)', borderColor: 'rgb(108, 195, 46)' }}
