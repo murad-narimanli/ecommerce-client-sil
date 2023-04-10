@@ -1,20 +1,37 @@
 import React from "react";
-import { Navbar,  Nav } from "react-bootstrap";
-import "../../assets/scss/Header.scss"
-
+import { Navbar, Nav } from "react-bootstrap";
+import "../../assets/scss/Header.scss";
+import { useLocation, NavLink } from "react-router-dom";
 function Menu() {
+  // let location =useLoaction()
+  // let {pathname}=location
+
   return (
     <div className="container">
       <Navbar expand="lg">
-        <Navbar.Brand  className="navbar" href="#home">Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse  >
+        <Navbar.Collapse>
           <Nav className="me-2">
-            <Nav.Link href="#link">Blog Page</Nav.Link>
-            <Nav.Link href="#link">Vegetables & Fruits</Nav.Link>
-            <Nav.Link href="#link">FoodGrains, Oil & Masala</Nav.Link>
-            <Nav.Link href="#link">Shop</Nav.Link>
-            <Nav.Link href="#link">Contact us</Nav.Link>           
+            <NavLink to="./" className="text-decoration-none">
+              {" "}
+              <Nav.Link href="#link">Ana Səhifə</Nav.Link>
+            </NavLink>
+            <NavLink to="./aboutus" className="text-decoration-none">
+              {" "}
+              <Nav.Link href="#link">Haqqımızda</Nav.Link>
+            </NavLink>
+            <NavLink to="./blog" className="text-decoration-none">
+              {" "}
+              <Nav.Link href="#link">Bloq</Nav.Link>{" "}
+            </NavLink>
+            <NavLink to="./shop" className="text-decoration-none">
+              {" "}
+              <Nav.Link href="#link">Məhsullar</Nav.Link>{" "}
+            </NavLink>
+            <NavLink to="./contactus" className="text-decoration-none">
+              {" "}
+              <Nav.Link href="#link">Əlaqə</Nav.Link>{" "}
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
