@@ -1,33 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../assets/scss/Contact.scss";
 import { FiMessageCircle } from "react-icons/fi";
 import { MdLocalPhone } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 import swal from "sweetalert";
-import { Modal, Button, Form } from "react-bootstrap";
+import "../../assets/scss/Contact.scss"
 
 function Contactus() {
-  const [showModal, setShowModal] = useState(false);
-  const [inputValue, setInputValue] = useState("");
-
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
-
-  const handleModalClose = () => {
-    setShowModal(false);
-  };
-
-  const handleButtonClick = () => {
-    setShowModal(true);
-  };
-
-  const handleModalSubmit = (event) => {
-    event.preventDefault();
-    // input değerini kullanarak bir şeyler yapabilirsiniz
-    // ...
-    setShowModal(false);
-  };
+ 
 
   const Alert = () => {
     swal({
@@ -95,26 +75,7 @@ function Contactus() {
           </div>
         </div>
         <div className="partnyor">
-          <Button onClick={handleButtonClick}>Partnyor ol</Button>
-          <Modal show={showModal} onHide={handleModalClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Bir Modal Başlığı</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <Form onSubmit={handleModalSubmit}>
-                <Form.Group>
-                  <Form.Label>Input Label</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="Bir şeyler yazın"
-                    value={inputValue}
-                    onChange={handleInputChange}
-                  />
-                </Form.Group>
-                <Button type="submit">Kaydet</Button>
-              </Form>
-            </Modal.Body>
-          </Modal>
+          
         </div>
       </div>
     </div>
