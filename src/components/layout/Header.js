@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/scss/Header.scss";
-import Menu from "../elements/Menu";
+import Menu from "../elements/Menu";g
 import Image from "../../assets/image/image";
 import Searchnav from "../elements/Searchbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -46,8 +46,10 @@ const Header = () => {
       </nav>
       <Menu />
 
+     
     </div>
   );
 };
 
 export default Header;
+

@@ -1,0 +1,185 @@
+.about {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  .header {
+    color: rgb(132, 191, 65);
+    h1 {
+      font-weight: 700;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+    }
+  }
+
+  .about-container {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    padding: 80px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    .card {
+      position: relative;
+      width: 350px;
+      height: 180px;
+      //   border: none;
+      transition: 0.5s;
+      //   background-color: #e7792bce;
+      &:hover {
+        height: 450px;
+        animation-play-state: running;
+        .lines {
+          &::before {
+            animation-play-state: running;
+          }
+        }
+
+        .imgBx {
+          top: 25px;
+          width: 200px;
+          height: 200px;
+          &::before {
+            animation-play-state: running;
+          }
+        }
+        .content {
+          .details {
+            transform: translate(0px);
+            p{
+                opacity: 1;
+            }
+          }
+        }
+      }
+      .lines {
+        position: absolute;
+        inset: 0;
+        background: white;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 500px;
+          height: 120px;
+          background: linear-gradient(
+            transparent,
+            rgb(132, 191, 65),
+            rgb(132, 191, 65),
+            rgb(132, 191, 65),
+            transparent
+          );
+          animation: animate 4s linear infinite;
+          animation-play-state: paused;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 3px;
+          background: white;
+        }
+      }
+      .imgBx {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        transform: translate(-50%);
+        background: #fff;
+        transition: 0.5s;
+        z-index: 10;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 500px;
+          height: 150px;
+          transform: translate(-50%, -50%);
+          background: linear-gradient(
+            transparent,
+            rgb(132, 191, 65),
+            rgb(132, 191, 65),
+            rgb(132, 191, 65),
+            transparent
+          );
+          animation: animate2 6s linear infinite;
+          animation-play-state: paused;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          inset: 3px;
+          background-color: white;
+        }
+        i {
+          position: absolute;
+          font-size: 50px;
+          z-index: 1;
+          color: rgb(132, 191, 65);
+          transition: 0.5s;
+          &:hover {
+            filter: invert(0);
+          }
+        }
+      }
+      .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        .details {
+          padding: 30px 20px;
+          text-align: center;
+          width: 100%;
+          transition: 0.5s;
+          transform: translateY(185px);
+
+          h2 {
+            font-size: 25px;
+            font-weight: 500;
+            color: #e7792bce;
+          }
+          p {
+            color: #606168;
+            font-size: 16px;
+            opacity: 0;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
