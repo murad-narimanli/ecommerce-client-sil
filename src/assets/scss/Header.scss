@@ -4,6 +4,7 @@
 
 .navbar{
     color: #666;
+    text-decoration: none !important;
     &:hover{
         color: #2fdb00 !important;
     }
@@ -13,11 +14,14 @@
 }
 a.nav-link{
     color: #666;
+    text-decoration: none !important;
 
     &:hover{
+      text-decoration: none !important;
         color: #2fdb00 !important;
     }
     &:active{
+      text-decoration: none !important;
         color: #2fdb00 !important;
     }
 }

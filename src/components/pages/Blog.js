@@ -11,7 +11,7 @@ function Blog() {
     "Mövsüm fərqi olmadan özümüzə və üzümüzə qulluq etmək mütləqdir. Yayda günəş şüalarının faydaları olsa da, düzgün saatlarda günəşlənməsək zərərli tərəfləri ilə qarşılaşarıq....";
 
   return (
-    <div className="container d-flex justify-content-center">
+    <div className="container d-flex justify-content-center mb-5 mt-5">
       <Card
         hoverable
         style={{ width: "60%" }}
