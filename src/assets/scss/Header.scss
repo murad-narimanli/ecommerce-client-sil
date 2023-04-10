@@ -65,14 +65,85 @@ a.nav-link{
   width: 290px;
 }
 //footer
-.application{
-  color: white;
-  background-color: black;
-  padding: 1px 7px;
+
+.footer{
+background-color: rgb(108, 195, 46);
+} 
+.f-main{
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 17px;
 }
-.download{
-  font-size: 10px;
+.f-piece{
+  font-size: 12px;
+  font-weight: 400!important;
+  color: #fff;
+  transition: .5s;
+  opacity: 1;
+ li{
+  margin: 12px 0;
+ }
 }
+
+.application {
+  border: 1px solid rgb(201, 205, 207);
+  width: 52%;
+  padding: 5px 11px;
+  background-color: light;
+  background-color: rgb(246, 246, 246);
+  border-radius: 10px;
+  margin: 3px 5px;
+
+  
+
+ .iconappstore {
+      background-image: url(https://arazmarket.az/site/assets/files/1312/app-store.svg);
+      display: inline-block;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      
+      &:hover {
+        color: rgb(154, 154, 154);
+      }
+    }
+    .icongoogleplay{
+      background-image: url(https://arazmarket.az/site/assets/files/1313/google-play.svg);
+      display: inline-block;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      
+      &:hover {
+        color: rgb(154, 154, 154);
+      }
+    }
+    
+    .download {
+      font-size: 10px;
+      color: #b5b5b5;
+      
+      &:hover {
+        color: rgb(154, 154, 154);
+      }
+    }
+    
+    .app {
+      font-size: 15px;
+      color: #b5b5b5;
+      
+      &:hover {
+        color: rgb(154, 154, 154);
+      }
+    }
+  }
+  
+
 
 @media (max-width: 767.98px) {
   .navbar-expand-sm .navbar-nav .nav-link {
