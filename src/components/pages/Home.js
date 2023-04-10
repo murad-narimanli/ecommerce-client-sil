@@ -1,9 +1,13 @@
 import React from 'react'
+import Submenucatalog from '../elements/Submenucatalog'
+// import CountdownClock from '../elements/Countdownclock'
 
 function Home() {
   return (
     <div>
-      HOME 
+    <Submenucatalog />
+    {/* <CountdownClock /> */}
+  
     </div>
   )
 }
