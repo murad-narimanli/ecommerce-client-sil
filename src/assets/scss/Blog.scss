@@ -30,8 +30,22 @@ $button-opacity: 1;
   display: flex;
   justify-content: end;
 }
-.blogdetail_btn{
+.detail_footer{
+  padding: 5px;
   display: flex;
-  justify-content: end;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.back_icon{
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  left:10px;
+}
+.blogdetail_btn{
+  position: absolute;
+  right:10px;
+  top: 15px;
   $button-background-color: #2FDB00;
 }

@@ -5,6 +5,7 @@ import Blog from "../pages/Blog"
 import Contactus from "../pages/Contactus"
 import Shop from "../pages/Shop"
 import BlogDetail from "../pages/BlogDetail"
+
 const Routing = () => {
     return (
         
@@ -15,6 +16,7 @@ const Routing = () => {
             <Route path="contactus" element={<Contactus/>}/>
             <Route path="shop" element={<Shop/>}/>
             <Route path="blogdetail" element={<BlogDetail/>}/>
+           
         </Routes>
        
     )

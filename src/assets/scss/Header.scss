@@ -2,29 +2,32 @@
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar{
-    color: #666;
-    text-decoration: none !important;
-    &:hover{
-        color: #2fdb00 !important;
-    }
-    &:active{
-        color: #2fdb00 !important;
-    }
-}
-a.nav-link{
-    color: #666;
-    text-decoration: none !important;
+a.nav-link {
+  color: #666;
 
-    &:hover{
-      text-decoration: none !important;
-        color: #2fdb00 !important;
-    }
-    &:active{
-      text-decoration: none !important;
-        color: #2fdb00 !important;
-    }
+  &:hover {
+    background-size: 100%;
+    --fill-color:#2fdb00 ;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font: 100 16px Raleway, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+  color: transparent;
+  background-clip: text;
+  transition: 0.3s linear;
+  }
 }
+
+
+
+
+
+
+
 .ant-space{
   .ant-space-item{
     margin-right: 5rem;
@@ -156,3 +159,20 @@ background-color: rgb(108, 195, 46);
     border-radius: 0.25rem;
   }
 }
+
+///footer-bottom by zumrud
+.footer_bottom{
+  text-align: center;
+  border-top: 1px solid #fff;
+  -webkit-box-pack: justify;
+  background-color: #6cc32e;
+}
+.footerb_text{
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+// .footerb_btn{
+// color: #007bff !important;
+// }
