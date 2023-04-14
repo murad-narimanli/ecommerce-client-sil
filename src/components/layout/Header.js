@@ -5,8 +5,12 @@ import Image from "../../assets/image/image";
 import Searchnav from "../elements/Searchbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
+
+
 
 const Header = () => {
+  let navigate=useNavigate()
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light ">
@@ -50,6 +54,7 @@ const Header = () => {
     </div>
   );
 };
+
 
 export default Header;
 

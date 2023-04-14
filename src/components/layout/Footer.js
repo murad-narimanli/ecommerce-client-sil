@@ -1,15 +1,49 @@
 import React from "react";
-
-
+import { useState, useEffect } from "react";
 
 function Footer() {
+   const [isVisible, setIsVisible] = useState(false);
+
+   useEffect(() => {
+     window.addEventListener("scroll", handleScroll);
+ 
+   
+     return () => window.removeEventListener("scroll", handleScroll);
+   }, []);
+ 
+   const handleScroll = () => {
+     const scrollY = window.scrollY;
+     if (scrollY > 50) {
+       setIsVisible(true);
+     } else {
+       setIsVisible(false);
+     }
+   };
+ 
+   const scrollToTop = () => {
+     window.scrollTo({ top: 0, behavior: "smooth" });
+   };
+   const buttonStyle = {
+      backgroundColor: "#2196F3",
+      color: "white",
+      padding: "10px 20px",
+      border: "none",
+      borderRadius: "50px",
+      position: "fixed",
+      bottom: "10px",
+
+    right: "20px",
+      opacity: isVisible ? "1" : "0",
+      transition: "opacity 0.3s",
+      cursor: "pointer",
+    };
 return (
 <div className="footer">
 <div className="container">
 <div className="row">
 <div className="col-md-3">
 <div className="footer-info">
-<h3 style={{ marginLeft: '5rem' }} className="f-main">Əlaqə</h3>
+<h3 className="f-main">Əlaqə</h3>
 <div className="bravotext f-piece">
 <p>+994 12 000 0000</p>
 <p>+994 50 000 0000</p>
@@ -60,6 +94,16 @@ return (
 </div>
 </div>
 </div>
+</div>
+<div className="footer_bottom p-3">
+  <span className=" text-center footerb_text">Copyright © 2023 Bravo</span>
+  <div className="scroll-to-top d-flex justify-content-end">
+      {isVisible && (
+        <button onClick={scrollToTop} style={buttonStyle} className="scroll-top ">
+          <i className="fas fa-arrow-up"></i>
+        </button>
+      )}
+    </div>
 </div>
 </div>
 );
