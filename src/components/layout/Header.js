@@ -10,7 +10,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
 
-
   const navigate = useNavigate();
 
   const registration = () => {
@@ -46,11 +45,11 @@ const Header = () => {
             </div>
             <div className="d-flex button-container">
               <Searchnav/>
-              <button onClick={login}> <span>Daxil ol</span> </button>
-              <button onClick={registration}> <span>Qeydiyyatdan keç</span> </button>
-              <button onClick={wishList} className="wishList"> <span><BsHeartFill/></span> </button>
-              <button onClick={basket} className="shoppingCard"> <span><AiOutlineShoppingCart/></span> </button>
-              <></>
+              <button onClick={login} > Daxil ol </button>
+              <button onClick={registration}>Qeydiyyatdan keç</button>
+              <button onClick={wishList} className="wishList"> <BsHeartFill/> </button>
+              <button onClick={basket} className="shoppingCard"> <AiOutlineShoppingCart/> </button>
+             
             </div>
           </nav>
         </div>

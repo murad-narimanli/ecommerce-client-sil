@@ -37,47 +37,14 @@ a.nav-link {
         margin-top: 20px;
         position: relative;
         padding: 10px 20px;
-        border: 2px solid rgb(108, 195, 46);
-        background: #fff;
+        background: rgb(108, 195, 46);
         text-transform: uppercase;
         margin-left: 20px;
-        color: rgb(108, 195, 46);
+        color: #fff;
+        border: none;
         font-weight: 500;
         font-size: 18px;
-        span {
-          position: relative;
-          z-index: 99999;
-        }
-        &:before {
-          content: "";
-          position: absolute;
-          top: 6px;
-          left: -2px;
-          width: calc(100% + 4px);
-          height: calc(100% - 12px);
-          background-color: #fff;
-          transition: 0.5s;
-          transform: scaleY(1);
-        }
-        &:after {
-          content: "";
-          position: absolute;
-          left: 6px;
-          top: -2px;
-          height: calc(100% + 4px);
-          width: calc(100% - 12px);
-          background-color: #fff;
-          transition: 0.5s;
-          transform: scaleX(1);
-        }
-        &:hover {
-          &:before {
-            transform: scaleY(0);
-          }
-          &:after {
-            transform: scaleX(0);
-          }
-        }
+        border-radius: 5px;
       }
     }
   }
@@ -87,25 +54,16 @@ a.nav-link {
   margin-top: 30px;
   display: flex;
   cursor: pointer;
-  padding: 10px 20px;
-  // background-color: rgb(108, 195, 46);
-  // border-radius: 30px;
   align-items: center;
-  &:hover {
-    input {
-      width: 400px;
-      border: none;
-      font-weight: 500;
-      transition: 0.8s;
-      background-color: transparent;
-      border-bottom: 2px solid rgb(108, 195, 46);
-    }
-  }
   input {
+    width: 400px;
     border: none;
-    color: rgb(108, 195, 46);
+    font-weight: 500;
+    transition: 0.8s;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(108, 195, 46);
     outline: none;
-    width: 0;
+    padding: 5px;
     &::placeholder {
       font-size: 15px;
       color: #66666676;
@@ -132,55 +90,54 @@ a.nav-link {
     align-items: center;
     justify-content: space-around;
     padding: 40px 0px;
-    .info{
+    .info {
       width: 150px;
       height: 120px;
-      h3{
-         transition: 0.5s;
-        &:hover{
+      h3 {
+        transition: 0.5s;
+        &:hover {
           color: #000;
           cursor: pointer;
         }
       }
-     
     }
-    .f-shop{
+    .f-shop {
       width: 200px;
       height: 120px;
-      h3{
+      h3 {
         transition: 0.5s;
-       &:hover{
-         color: #000;
-         cursor: pointer;
-       }
-     }
+        &:hover {
+          color: #000;
+          cursor: pointer;
+        }
+      }
     }
-    .f-about{
+    .f-about {
       width: 200px;
       height: 120px;
-      h3{
+      h3 {
         transition: 0.5s;
-       &:hover{
-         color: #000;
-         cursor: pointer;
-       }
-     }
+        &:hover {
+          color: #000;
+          cursor: pointer;
+        }
+      }
     }
-    ul{
+    ul {
       padding-left: 0;
-      li{
+      li {
         text-decoration: none;
         list-style: none;
         padding-left: 0;
         transition: 0.5s;
-        &:hover{
+        &:hover {
           color: #000;
           cursor: pointer;
         }
       }
     }
   }
-  .f-down{
+  .f-down {
     margin-top: 60px;
     font-size: 10px;
   }
