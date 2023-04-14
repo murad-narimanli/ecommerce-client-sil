@@ -162,6 +162,7 @@ background-color: rgb(108, 195, 46);
 
 ///footer-bottom by zumrud
 .footer_bottom{
+  position: relative;
   text-align: center;
   border-top: 1px solid #fff;
   -webkit-box-pack: justify;
@@ -172,7 +173,3 @@ background-color: rgb(108, 195, 46);
   color: #fff;
   font-size: 14px;
 }
-
-// .footerb_btn{
-// color: #007bff !important;
-// }

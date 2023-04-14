@@ -13,7 +13,7 @@ function Footer() {
  
    const handleScroll = () => {
      const scrollY = window.scrollY;
-     if (scrollY > 500) {
+     if (scrollY > 50) {
        setIsVisible(true);
      } else {
        setIsVisible(false);
@@ -24,14 +24,15 @@ function Footer() {
      window.scrollTo({ top: 0, behavior: "smooth" });
    };
    const buttonStyle = {
-      backgroundColor: "#000000",
+      backgroundColor: "#2196F3",
       color: "white",
       padding: "10px 20px",
       border: "none",
       borderRadius: "50px",
       position: "fixed",
-      bottom: "x",
-      right: "20px",
+      bottom: "10px",
+
+    right: "20px",
       opacity: isVisible ? "1" : "0",
       transition: "opacity 0.3s",
       cursor: "pointer",
@@ -98,7 +99,7 @@ return (
   <span className=" text-center footerb_text">Copyright © 2023 Bravo</span>
   <div className="scroll-to-top d-flex justify-content-end">
       {isVisible && (
-        <button onClick={scrollToTop} style={buttonStyle}  className="footerb_btn">
+        <button onClick={scrollToTop} style={buttonStyle} className="scroll-top ">
           <i className="fas fa-arrow-up"></i>
         </button>
       )}

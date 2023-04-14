@@ -33,7 +33,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <div className="login-button cart">
-                  <FontAwesomeIcon />
+                  <FontAwesomeIcon icon={faShoppingCart} />
                 </div>
               </li>
               <li className="nav-item">
