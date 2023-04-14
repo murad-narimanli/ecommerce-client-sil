@@ -1,36 +1,79 @@
-// import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import "../../assets/scss/Home.scss"
+import Image from "../../assets/image/image";
 
-// const CountdownClock = () => {
-//   const [hours, setHours] = useState(24);
-//   const [minutes, setMinutes] = useState(0);
-//   const [seconds, setSeconds] = useState(0);
+const CountdownClock = () => {
+  const initialTime = {
+    hours: 12,
+    minutes: 0,
+    seconds: 0,
+  };
+  
 
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       if (hours === 0 && minutes === 0 && seconds === 0) {
-//         clearInterval(interval);
-//         // do something when the countdown is complete
-//       } else if (minutes === 0 && seconds === 0) {
-//         setHours((hours) => hours - 1);
-//         setMinutes(59);
-//         setSeconds(59);
-//       } else if (seconds === 0) {
-//         setMinutes((minutes) => minutes - 1);
-//         setSeconds(59);
-//       } else {
-//         setSeconds((seconds) => seconds - 1);
-//       }
-//     }, 1000);
+  const [countdownTime, setCountdownTime] = useState(
+    JSON.parse(localStorage.getItem("countdownTime")) || initialTime
+  );
 
-//     return () => clearInterval(interval);
-//   }, [hours, minutes, seconds]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (countdownTime.hours === 0 && countdownTime.minutes === 0 && countdownTime.seconds === 0) {
+        clearInterval(interval);
+      } else if (countdownTime.minutes === 0 && countdownTime.seconds === 0) {
+        setCountdownTime({
+          hours: countdownTime.hours - 1,
+          minutes: 59,
+          seconds: 59,
+        });
+      } else if (countdownTime.seconds === 0) {
+        setCountdownTime({
+          hours: countdownTime.hours,
+          minutes: countdownTime.minutes - 1,
+          seconds: 59,
+        });
+      } else {
+        setCountdownTime({
+          hours: countdownTime.hours,
+          minutes: countdownTime.minutes,
+          seconds: countdownTime.seconds - 1,
+        });
+      }
+    }, 1000);
 
-//   return (
-//     <div>
-//       {hours.toString().padStart(2, "0")}:{minutes
-//         .toString()
-//         .padStart(2, "0")}:{seconds.toString().padStart(2, "0")}
-//     </div>
-//   );
-// };
-// export default CountdownClock;
+    localStorage.setItem("countdownTime", JSON.stringify(countdownTime));
+
+    return () => clearInterval(interval);
+  }, [countdownTime]);
+
+  return (
+    <div>
+        <div className="bravocount"><span>Bravo endirimləri ilə sevindirir!</span></div>
+        <div
+        style={{
+          backgroundColor: "rgb(145, 211, 82)",
+          color: "rgb(252 242 242)",
+          fontSize: "24px",
+          padding: "10px",
+          borderRadius: "80% 20% 87% 13% / 32% 63% 37% 68%",
+          textAlign: "center",
+          margin: "30px 0"
+       
+        }}
+      >
+
+
+
+
+      {countdownTime.hours.toString().padStart(2, "0")}:{countdownTime.minutes
+        .toString()
+        .padStart(2, "0")}:{countdownTime.seconds.toString().padStart(2, "0")}
+    </div>
+    <img src={Image.Lengushopping} />
+    <a href="#" className="btn-flip" data-back="Alışverişə" data-front="Başla"></a>
+
+    </div>
+   
+  );
+};
+
+export default CountdownClock;
+

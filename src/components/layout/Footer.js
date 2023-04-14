@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 function Footer() {
 return (
 <div className="footer">
@@ -8,7 +9,7 @@ return (
 <div className="row">
 <div className="col-md-3">
 <div className="footer-info">
-<h3 className="f-main">Əlaqə</h3>
+<h3 style={{ marginLeft: '5rem' }} className="f-main">Əlaqə</h3>
 <div className="bravotext f-piece">
 <p>+994 12 000 0000</p>
 <p>+994 50 000 0000</p>

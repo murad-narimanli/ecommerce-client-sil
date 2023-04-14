@@ -1,18 +1,23 @@
 import React from "react";
-import "../../assets/scss/Header.scss"
+import "../../assets/scss/Header.scss";
 import Menu from "../elements/Menu";
 import Image from "../../assets/image/image";
 import Searchnav from "../elements/Searchbar";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-  return(
+  return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light ">
         <div className="container">
           <div style={{ width: "100%" }}>
-            <img className="bravologo" src={Image.Bravologo} alt="" style={{ width: "200px" }} />
+            <img
+              className="bravologo"
+              src={Image.Bravologo}
+              alt=""
+              style={{ width: "200px" }}
+            />
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -40,13 +45,11 @@ const Header = () => {
         </div>
       </nav>
       <Menu />
-      
+
+     
     </div>
   );
 };
 
 export default Header;
-
-
-
 
