@@ -24,3 +24,14 @@ $button-opacity: 1;
 
   }
 }
+.blog_icon{
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+.blogdetail_btn{
+  display: flex;
+  justify-content: end;
+  $button-background-color: #2FDB00;
+}
