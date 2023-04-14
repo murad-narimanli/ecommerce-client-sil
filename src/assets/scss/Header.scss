@@ -2,92 +2,188 @@
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.navbar{
-    color: #666;
-    text-decoration: none !important;
-    &:hover{
-        color: #2fdb00 !important;
-    }
-    &:active{
-        color: #2fdb00 !important;
-    }
-}
-a.nav-link{
-    color: #666;
-    text-decoration: none !important;
-
-    &:hover{
-      text-decoration: none !important;
-        color: #2fdb00 !important;
-    }
-    &:active{
-      text-decoration: none !important;
-        color: #2fdb00 !important;
-    }
-}
-.ant-space{
-  .ant-space-item{
-    margin-right: 5rem;
-    margin-top: 26px;
-
+.navbar {
+  color: #666;
+  text-decoration: none !important;
+  &:hover {
+    color: #2fdb00 !important;
   }
-
+  &:active {
+    color: #2fdb00 !important;
+  }
 }
 
-.login-buttons {
+a.nav-link {
+  color: #666;
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+    color: #2fdb00 !important;
+  }
+  &:active {
+    text-decoration: none !important;
+    color: #2fdb00 !important;
+  }
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+
+  .container {
+    .button-container {
+      button {
+        margin-top: 20px;
+        position: relative;
+        padding: 10px 20px;
+        border: 2px solid rgb(108, 195, 46);
+        background: #fff;
+        text-transform: uppercase;
+        margin-left: 20px;
+        color: rgb(108, 195, 46);
+        font-weight: 500;
+        font-size: 18px;
+        span {
+          position: relative;
+          z-index: 99999;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          top: 6px;
+          left: -2px;
+          width: calc(100% + 4px);
+          height: calc(100% - 12px);
+          background-color: #fff;
+          transition: 0.5s;
+          transform: scaleY(1);
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          left: 6px;
+          top: -2px;
+          height: calc(100% + 4px);
+          width: calc(100% - 12px);
+          background-color: #fff;
+          transition: 0.5s;
+          transform: scaleX(1);
+        }
+        &:hover {
+          &:before {
+            transform: scaleY(0);
+          }
+          &:after {
+            transform: scaleX(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+.inputBox {
+  margin-top: 30px;
   display: flex;
-  align-items: center;
-}
-
-.login-button {
-  margin-right: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #6cc32e;
-  color: white;
-  border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 22px;
+  padding: 10px 20px;
+  // background-color: rgb(108, 195, 46);
+  // border-radius: 30px;
+  align-items: center;
+  &:hover {
+    input {
+      width: 400px;
+      border: none;
+      font-weight: 500;
+      transition: 0.8s;
+      background-color: transparent;
+      border-bottom: 2px solid rgb(108, 195, 46);
+    }
+  }
+  input {
+    border: none;
+    color: rgb(108, 195, 46);
+    outline: none;
+    width: 0;
+    &::placeholder {
+      font-size: 15px;
+      color: #66666676;
+    }
+  }
+  a {
+    .search {
+      color: rgb(108, 195, 46);
+      font-size: 18px;
+    }
+  }
 }
 
-
-.login-button:hover {
-  background-color: #3f6c16;
-}
-
-.search-input:hover {
-  border-color: rgb(108, 195, 46);
-}
-.ant-btn-primary{
-  background-color: #6ba537 !important;
-}
-.ant-btn-primary:not(:disabled):hover {
-  background-color: #6ba537 !important;
-}
-
-.ant-input-group{
-  width: 290px;
-}
 //footer
 
-.footer{
-background-color: rgb(108, 195, 46);
-} 
-.f-main{
+.footer {
+  background-color: rgb(108, 195, 46);
+
   color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  margin-top: 17px;
-}
-.f-piece{
-  font-size: 12px;
-  font-weight: 400!important;
-  color: #fff;
-  transition: .5s;
-  opacity: 1;
- li{
-  margin: 12px 0;
- }
+  width: 100%;
+  height: 300px;
+  .footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0px;
+    .info{
+      width: 150px;
+      height: 120px;
+      h3{
+         transition: 0.5s;
+        &:hover{
+          color: #000;
+          cursor: pointer;
+        }
+      }
+     
+    }
+    .f-shop{
+      width: 200px;
+      height: 120px;
+      h3{
+        transition: 0.5s;
+       &:hover{
+         color: #000;
+         cursor: pointer;
+       }
+     }
+    }
+    .f-about{
+      width: 200px;
+      height: 120px;
+      h3{
+        transition: 0.5s;
+       &:hover{
+         color: #000;
+         cursor: pointer;
+       }
+     }
+    }
+    ul{
+      padding-left: 0;
+      li{
+        text-decoration: none;
+        list-style: none;
+        padding-left: 0;
+        transition: 0.5s;
+        &:hover{
+          color: #000;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .f-down{
+    margin-top: 60px;
+    font-size: 10px;
+  }
 }
 
 .application {
@@ -99,60 +195,48 @@ background-color: rgb(108, 195, 46);
   border-radius: 10px;
   margin: 3px 5px;
 
-  
+  .iconappstore {
+    background-image: url(https://arazmarket.az/site/assets/files/1312/app-store.svg);
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
 
- .iconappstore {
-      background-image: url(https://arazmarket.az/site/assets/files/1312/app-store.svg);
-      display: inline-block;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 24px;
-      height: 24px;
-      
-      &:hover {
-        color: rgb(154, 154, 154);
-      }
-    }
-    .icongoogleplay{
-      background-image: url(https://arazmarket.az/site/assets/files/1313/google-play.svg);
-      display: inline-block;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 24px;
-      height: 24px;
-      
-      &:hover {
-        color: rgb(154, 154, 154);
-      }
-    }
-    
-    .download {
-      font-size: 10px;
-      color: #b5b5b5;
-      
-      &:hover {
-        color: rgb(154, 154, 154);
-      }
-    }
-    
-    .app {
-      font-size: 15px;
-      color: #b5b5b5;
-      
-      &:hover {
-        color: rgb(154, 154, 154);
-      }
+    &:hover {
+      color: rgb(154, 154, 154);
     }
   }
-  
+  .icongoogleplay {
+    background-image: url(https://arazmarket.az/site/assets/files/1313/google-play.svg);
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
 
+    &:hover {
+      color: rgb(154, 154, 154);
+    }
+  }
 
-@media (max-width: 767.98px) {
-  .navbar-expand-sm .navbar-nav .nav-link {
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 0.25rem;
+  .download {
+    font-size: 10px;
+    color: #b5b5b5;
+
+    &:hover {
+      color: rgb(154, 154, 154);
+    }
+  }
+
+  .app {
+    font-size: 15px;
+    color: #b5b5b5;
+
+    &:hover {
+      color: rgb(154, 154, 154);
+    }
   }
 }

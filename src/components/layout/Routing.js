@@ -4,6 +4,10 @@ import Aboutus from "../pages/Aboutus"
 import Blog from "../pages/Blog"
 import Contactus from "../pages/Contactus"
 import Shop from "../pages/Shop"
+import WishList from "../elements/WishList"
+import Basket from "../elements/Basket"
+import Login from "../elements/Login"
+import Registration from "../elements/Registration"
 
 const Routing = () => {
     return (
@@ -14,6 +18,10 @@ const Routing = () => {
             <Route path="blog" element={<Blog/>}/>
             <Route path="contactus" element={<Contactus/>}/>
             <Route path="shop" element={<Shop/>}/>
+            <Route path="wishlist" element={<WishList/>}/>
+            <Route path="login" element={<Login/>}/>
+            <Route path="registration" element={<Registration/>}/>
+            <Route path="basket" element={<Basket/>}/>
         </Routes>
        
     )
