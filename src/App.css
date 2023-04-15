@@ -7,5 +7,10 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
 }
 
+::selection{
+  background-color: rgb(132, 191, 65);
+  color: #fff;
+}

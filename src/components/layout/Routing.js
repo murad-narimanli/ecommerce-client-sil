@@ -5,6 +5,10 @@ import Blog from "../pages/Blog"
 import Contactus from "../pages/Contactus"
 import Shop from "../pages/Shop"
 import BlogDetail from "../pages/BlogDetail"
+import WishList from "../elements/WishList"
+import Basket from "../elements/Basket"
+import Login from "../elements/Login"
+import Registration from "../elements/Registration"
 
 const Routing = () => {
     return (
@@ -17,6 +21,10 @@ const Routing = () => {
             <Route path="shop" element={<Shop/>}/>
             <Route path="blogdetail" element={<BlogDetail/>}/>
            
+            <Route path="wishlist" element={<WishList/>}/>
+            <Route path="login" element={<Login/>}/>
+            <Route path="registration" element={<Registration/>}/>
+            <Route path="basket" element={<Basket/>}/>
         </Routes>
        
     )

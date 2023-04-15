@@ -54,7 +54,7 @@ function Contactus() {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div className="box">
+          <div className="boxContact">
             <h4>Baş ofis</h4>
             <p> Gənclik Mall , 16 Fətəli Xan Xoyski, Bakı 1010</p>
           </div>
@@ -74,9 +74,7 @@ function Contactus() {
             <input type="radio" name="clr1" />
           </div>
         </div>
-        <div className="partnyor">
-          
-        </div>
+       
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../../assets/scss/Home.scss"
 import Image from "../../assets/image/image";
+import { Link } from "react-router-dom";
+
 
 const CountdownClock = () => {
   const initialTime = {
@@ -68,7 +70,8 @@ const CountdownClock = () => {
         .padStart(2, "0")}:{countdownTime.seconds.toString().padStart(2, "0")}
     </div>
     <img src={Image.Lengushopping} />
-    <a href="#" className="btn-flip" data-back="Alışverişə" data-front="Başla"></a>
+    {/* <a href="#" className="btn-flip" data-back="Alışverişə" data-front="Başla"></a> */}
+    <Link to="/shop" className="btn-flip" data-back="Alışverişə" data-front="Başla"></Link>
 
     </div>
    

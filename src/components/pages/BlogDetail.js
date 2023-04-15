@@ -7,7 +7,7 @@ import {
   FacebookOutlined,
   InstagramOutlined,
   TwitterOutlined,
-  WhatsAppOutlined,
+  YoutubeOutlined,
 } from "@ant-design/icons";
 import { useState } from "react";
 import { Button, Modal } from "antd";
@@ -29,7 +29,7 @@ function BlogDetail() {
   const handleOk = () => {
     setIsModalOpen(false);
   };
-
+ 
   const handleCancel = () => {
     setIsModalOpen(false);
   };
@@ -90,7 +90,7 @@ function BlogDetail() {
           onCancel={handleCancel}
           className="w-25"
         >
-          <Card>
+          {/* <Card>
             <TwitterOutlined style={{ fontSize: "24px", color: "#1DA1F2" }} />
           </Card>
           <Card>
@@ -101,9 +101,23 @@ function BlogDetail() {
           </Card>
           <Card>
             <FacebookOutlined style={{ fontSize: "24px", color: "#1877F2" }} />
-          </Card>
+          </Card> */}
+          <Card onClick={() => window.open('https://twitter.com/BravoAZS')}>
+        <TwitterOutlined style={{ fontSize: "24px", color: "#1DA1F2" }} />
+      </Card>
+      <Card onClick={() => window.open('https://www.youtube.com/channel/UCUDPswYmu2SCJQCr7qDdtwA')}>
+  <YoutubeOutlined style={{ fontSize: "24px", color: "#25D366" }} />
+</Card>
+   
+      <Card onClick={() => window.open('https://www.instagram.com/bravosupermarketaz/')}>
+        <InstagramOutlined style={{ fontSize: "24px", color: "#E1306C" }} />
+      </Card>
+      <Card onClick={() => window.open('https://www.facebook.com/BravoSupermarketAz/?locale=ru_RU')}>
+        <FacebookOutlined style={{ fontSize: "24px", color: "#1877F2" }} />
+      </Card>
         </Modal>
       </Card>
+      
     </div>
   );
 }
