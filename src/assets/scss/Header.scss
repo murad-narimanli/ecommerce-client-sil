@@ -12,6 +12,25 @@
     color: #2fdb00 !important;
   }
 }
+a.nav-link {
+  color: #666;
+
+  &:hover {
+    background-size: 100%;
+    --fill-color:#2fdb00 ;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font: 100 16px Raleway, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+  color: transparent;
+  background-clip: text;
+  transition: 0.3s linear;
+  }
+}
 
 a.nav-link {
   color: #666;
@@ -43,8 +62,9 @@ a.nav-link {
         color: #fff;
         border: none;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         border-radius: 5px;
+
       }
     }
   }
@@ -56,7 +76,7 @@ a.nav-link {
   cursor: pointer;
   align-items: center;
   input {
-    width: 400px;
+    width: 321px;
     border: none;
     font-weight: 500;
     transition: 0.8s;
@@ -90,6 +110,9 @@ a.nav-link {
     align-items: center;
     justify-content: space-around;
     padding: 40px 0px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
     .info {
       width: 150px;
       height: 120px;
@@ -196,4 +219,43 @@ a.nav-link {
       color: rgb(154, 154, 154);
     }
   }
+}
+
+
+@media (max-width: 767.98px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 0.25rem;
+  }
+}
+
+///footer-bottom by zumrud
+.footer_bottom{
+  position: relative;
+  text-align: center;
+  border-top: 1px solid #fff;
+  -webkit-box-pack: justify;
+  background-color: #6cc32e;
+}
+.footerb_text{
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+// discount element
+
+.dicount_text{
+  
+  color: #fff !important;
+  font-size: 20px;
+}
+.discount{
+  background-color: #2fdb00;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }

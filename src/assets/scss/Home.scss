@@ -1,0 +1,120 @@
+.ant-menu-submenu-popup {
+	.ant-menu-vertical.ant-menu-sub {
+		&:not([class*='-active']) {
+			overflow-y: hidden;
+		}
+	}
+}
+a{
+    text-decoration: none !important;
+}
+.ant-menu{
+
+    .ant-menu-submenu-title{
+        .ant-menu-title-content{
+            overflow-y: none; 
+
+           
+            a{
+                text-decoration: none !important ;
+                color: black;
+               
+            }
+        }
+    }
+}
+.bravotext{
+    text-align: center;
+
+
+
+}
+.countdown-container{
+    border:1px solid #eae1e1;
+    padding: 10px 2px;
+    border-radius: 35px 90px 176px 89px;
+    box-shadow: -9px 10px 23px 6px rgba(132, 191, 65, 0.28);
+
+
+}
+.bravocount{
+    margin: 15px 0;
+
+}
+
+
+  
+  $speed: 0.5s;
+  
+  .btn-flip{
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+top:1rem;
+left:3rem;   
+    
+    &:hover{
+      
+      &:after{
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+      
+      &:before{
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+      }
+    }
+    
+    &:after{
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      color:black;
+      display: block;
+      transition: $speed;
+      position: absolute;
+      background: rgb(237, 242, 242);
+      content: attr(data-back);
+      transform: translateY(-50%) rotateX(90deg);
+    }
+    
+    &:before{
+      top: 0;
+      left: 0;
+      opacity: 1;
+      color:black;
+      display: block;
+      padding: 0 30px;
+      line-height: 40px;
+      transition: $speed;
+      position: relative;
+      background: rgb(237, 242, 242);
+      content: attr(data-front);
+    }
+}
+.ant-btn-default:not(:disabled):hover{
+  border-color:  rgb(145, 211, 82);
+}
+.videobutton{
+  width: 93px !important;
+  height: 50px;
+  background-color: rgb(145, 211, 82);
+  border-radius: 65px;
+  :hover{
+border-color:rgb(145, 211, 82) !important;
+  }
+.anticon{
+    font-size: 22px;
+    color: white;
+  }
+}

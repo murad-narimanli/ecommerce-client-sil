@@ -1,8 +1,43 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 
 function Footer() {
-  const navigate = useNavigate();
+   const [isVisible, setIsVisible] = useState(false);
+
+   let navigate = useNavigate()
+   useEffect(() => {
+     window.addEventListener("scroll", handleScroll);
+ 
+   
+     return () => window.removeEventListener("scroll", handleScroll);
+   }, []);
+ 
+   const handleScroll = () => {
+     const scrollY = window.scrollY;
+     if (scrollY > 50) {
+       setIsVisible(true);
+     } else {
+       setIsVisible(false);
+     }
+   };
+ 
+   const scrollToTop = () => {
+     window.scrollTo({ top: 0, behavior: "smooth" });
+   };
+   const buttonStyle = {
+      backgroundColor: "#2196F3",
+      color: "white",
+      padding: "10px 20px",
+      border: "none",
+      borderRadius: "50px",
+      position: "fixed",
+      bottom: "10px",
+
+    right: "20px",
+      opacity: isVisible ? "1" : "0",
+      transition: "opacity 0.3s",
+      cursor: "pointer",
+    };
 
   const contact = () => {
     navigate("/contactus");
@@ -16,7 +51,7 @@ function Footer() {
       <div className="container ">
         <div className="footerContainer">
           <div className="info">
-            <h3 onClick={contact}>Əlaqə</h3>
+            <h4 onClick={contact}>Əlaqə</h4>
             <ul>
               <li>+994 12 000 0000</li>
               <li>+994 50 000 0000</li>
@@ -25,7 +60,7 @@ function Footer() {
             </ul>
           </div>
           <div className="f-shop">
-            <h3>Mağazalarımız</h3>
+            <h4>Mağazalarımız</h4>
             <ul>
               <li>Əhmədli</li>
               <li>20 Yanvar</li>
@@ -35,7 +70,7 @@ function Footer() {
             </ul>
           </div>
           <div className="f-about">
-            <h3 onClick={about}>Haqqımızda</h3>
+            <h4 onClick={about}>Haqqımızda</h4>
             <ul>
               <li>Vakansiyalar</li>
               <li>Mağazalar Xəritəsi</li>
@@ -44,7 +79,7 @@ function Footer() {
             </ul>
           </div>
           <div className="mobil">
-            <h3>Mobil Tətbiqə Keçid</h3>
+            <h4>Mobil Tətbiqə Keçid</h4>
 
             <div className="applicationbravo d-flex">
               <div
@@ -75,9 +110,17 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="text-center f-down">
-        BÜTÜN HÜQUQLAR QORUNUR © AZERBAIJAN SUPERMARKET MMC
-      </div>
+      <div className="footer_bottom p-3">
+      <span className=" text-center footerb_text">Copyright © 2023 Bravo</span>
+      <div className="scroll-to-top d-flex justify-content-end">
+            {isVisible && (
+            <button onClick={scrollToTop} style={buttonStyle} className="scroll-top ">
+               <i className="fas fa-arrow-up"></i>
+            </button>
+            )}
+         </div>
+</div>
+
     </div>
   );
 }
