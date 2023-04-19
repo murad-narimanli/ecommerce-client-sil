@@ -1,0 +1,68 @@
+.react-multi-carousel-list {
+  .react-multi-carousel-track {
+    .react-multi-carousel-item {
+      width: 310px !important;
+    }
+  }
+}
+.slide {
+  margin-top: 70px;
+  margin-bottom: 100px;
+
+  .slideCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    span {
+      background-color: rgb(132, 191, 65);
+      font-size: 12px;
+      color: #fff;
+      padding: 2px 7px;
+      border-radius: 5px;
+      margin-left: 220px;
+    }
+    img {
+      width: 130px;
+      transition: 0.5s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+    b {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      background-color: rgb(237, 75, 81);
+      color: #fff;
+      font-size: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 180px;
+    }
+    h4 {
+      font-size: 17px;
+      color: rgb(138, 141, 132);
+    }
+    .cardDown {
+      width: 220px;
+    }
+    del {
+      color: rgb(149, 149, 149);
+      font-size: 13px;
+    }
+    button {
+      border: none;
+      background-color: rgb(132, 191, 65);
+      color: #fff;
+      font-size: 14px;
+      padding: 7px 15px;
+      border-radius: 5px;
+    }
+  }
+}

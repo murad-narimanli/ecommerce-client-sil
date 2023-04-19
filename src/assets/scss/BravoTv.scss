@@ -1,0 +1,36 @@
+.bravotv {
+  background-color: rgb(132, 191, 65);
+  height: 380px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  h1{
+    color: #fff;
+    margin-bottom: 20px;
+  }
+    justify-content: center;
+    align-items: center;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .youtube {
+      margin-left: 20px;
+      p{
+        color: #fff;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+
+.partners{
+  margin-bottom: 100px;
+  img{
+    width: 150px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 40px;
+  }
+}
