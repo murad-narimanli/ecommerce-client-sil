@@ -57,7 +57,8 @@ const CountdownClock = () => {
           padding: "10px",
           borderRadius: "80% 20% 87% 13% / 32% 63% 37% 68%",
           textAlign: "center",
-          margin: "30px 0"
+          margin: "30px 0",
+
        
         }}
       >

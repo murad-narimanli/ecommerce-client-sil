@@ -1,11 +1,15 @@
-import React from 'react'
-import CarouselImage from '../elements/CarouselImage'
-import CountdownClock from '../elements/Countdownclock'
-import Submenucatalog from '../elements/Submenucatalog'
-import "../../assets/scss/Home.scss"
-import ConsultationRequest from "../elements/ConsultationRequest"
-import Discount from "../elements/Discount"
-const Home=()=> {
+import React from "react";
+import CarouselImage from "../elements/CarouselImage";
+import CountdownClock from "../elements/Countdownclock";
+import Submenucatalog from "../elements/Submenucatalog";
+import "../../assets/scss/Home.scss";
+import ConsultationRequest from "../elements/ConsultationRequest";
+import Discount from "../elements/Discount";
+import Swiper from "../elements/Swiper";
+import BravoTv from "../elements/BravoTv";
+import Partners from "../elements/Partners";
+
+const Home = () => {
   return (
     <div className='container pb-5 bt-5 mt-5 mb-5'>
       <div className='row'>
@@ -23,11 +27,15 @@ const Home=()=> {
 <CountdownClock />
 </div>
       </div>
-      </div>
-      <ConsultationRequest />
+    <div>
+     
+      <Swiper />
+      <BravoTv/>
+      <Partners/>
     </div>
-  
-)
+    </div>
+    </div>
+  );
 };
 
-export default Home
+export default Home;
