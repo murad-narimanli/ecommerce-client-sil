@@ -104,7 +104,7 @@ a.nav-link {
 
   color: #fff;
   width: 100%;
-  height: 300px;
+  // height: 300px;
   .footerContainer {
     display: flex;
     align-items: center;
@@ -222,12 +222,13 @@ a.nav-link {
 }
 
 
-@media (max-width: 767.98px) {
+@media (max-width:  767.98px) {
   .navbar-expand-sm .navbar-nav .nav-link {
     color: #fff;
     background-color: #007bff;
     border-radius: 0.25rem;
   }
+
 }
 
 ///footer-bottom by zumrud
@@ -259,3 +260,135 @@ a.nav-link {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+
+@media only screen and (max-width: 750px) and (min-width: 360px)  {
+  .ant-menu{
+    width: 100% !important;
+  }
+ 
+  .btn-flip{
+    left:1rem !important
+  }
+  .discount{
+    margin-bottom: 19px;
+
+  }
+  .countdown-container{
+    margin: 15px 17px;
+    width: 326px !important;
+    border-radius: 0px 0px 0px 0px !important;
+    -webkit-border-radius: 0px 0px 0px 0px !important;
+    -moz-border-radius: 0px 0px 0px 0px !important;
+    -ms-border-radius: 0px 0px 0px 0px !important;
+    -o-border-radius: 0px 0px 0px 0px !important;
+}
+.subres{
+  display: flex;
+  justify-content: center;
+}
+.carouselresp{
+margin-top: 2rem;
+}
+ .closemenu{
+  margin-left: 2% !important;
+ }
+
+  .navbar-toggler{
+    background-color: rgb(108, 195, 46) !important;
+    color: white !important;
+    margin-left: 2% !important;
+    padding: 7px 4px;
+    font-size: 18px;
+    padding: 13px 40px !important;
+
+  }
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+ }
+  .header{
+    .navheader{
+      display: inline !important;
+    }
+
+  }
+  .button-container{
+    display: flex;
+    flex-direction: row;
+  flex-wrap: wrap;
+  .inputBox input {
+    width: 307px;}
+ 
+  }
+  .header .container .button-container button {
+    margin-top: 20px;
+    position: relative;
+    padding: 11px 9px;
+    background: rgb(108, 195, 46);
+    text-transform: uppercase;
+    margin-left: 2px;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+  }}
+
+
+  @media only screen and (max-width: 1180px) and (min-width: 768px)  {
+    .ant-menu{
+      width: 100% !important;
+    }
+    .videobutton{
+      margin-top: 30px;
+    }
+    .subres{
+      display: flex;
+      justify-content: center;
+    }
+    .countdown-container{
+      margin-top: 38px !important;
+
+    }
+    .carouselresp{
+      margin-top: 27px !important;
+
+    }
+    .closemenu{
+      margin-left: 3% !important;
+     }
+  .navbar-toggler{
+    background-color: rgb(108, 195, 46) !important;
+    color: white !important;
+    margin-left: 3% !important;
+    padding: 7px 4px;
+    font-size: 18px;
+    padding: 13px 80px !important;
+
+  }
+    .navbar-toggler:focus {
+       box-shadow: none !important;
+    }
+  .header{
+    .navheader{
+      display: inline !important;
+      .button-container{
+        display: inline !important;
+        button{
+          padding: 10px 41px !important;
+        }
+        .inputBox{
+          justify-content: center;
+
+        }
+
+      }
+    }
+    .bravologo{
+      display: block;
+    margin: auto;
+    }
+   
+  }
+  }
+
+  

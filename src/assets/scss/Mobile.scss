@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+    .header {
+      nav {
+        /* ... */
+        justify-content: space-between;
+  
+        .button-container {
+          /* ... */
+          margin-top: 0;
+          gap: 1.5rem;
+  
+          button {
+            /* ... */
+            width: auto;
+            padding: 0.5rem 1rem;
+          }
+        }
+  
+        .wishList,
+        .shoppingCard {
+          /* ... */
+          width: auto;
+        }
+  
+        .search-container {
+          /* ... */
+          order: 3;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  
+  

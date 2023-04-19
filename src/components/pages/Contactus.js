@@ -19,7 +19,7 @@ function Contactus() {
 
   return (
     <div>
-      <div className="container d-flex">
+      <div className="container d-flex contactcontainer">
         <div className="left">
           <div className="up">
             <h1>Baş ofis</h1>

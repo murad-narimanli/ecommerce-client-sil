@@ -24,7 +24,7 @@ let navigate=useNavigate()
         <a  className="blog_btn" onClick={()=>{
           navigate('/blogdetail')
         }}>
-          Read more
+          Daha ətraflı
         </a>
       </Card>
     </div>

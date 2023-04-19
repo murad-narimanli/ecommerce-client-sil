@@ -5,7 +5,7 @@ import Image from "../../assets/image/image";
 
 function CarouselImage() {
   return (
-    <div className="container w-100">
+    <div className="container w-100 carouselresp">
       <Carousel autoplay>
         <div>
           <img src={Image.Carousel2}  className="w-100" />

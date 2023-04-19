@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const CountdownClock = () => {
   const initialTime = {
-    hours: 12,
+    hours: 36,
     minutes: 0,
     seconds: 0,
   };
@@ -69,8 +69,7 @@ const CountdownClock = () => {
         .toString()
         .padStart(2, "0")}:{countdownTime.seconds.toString().padStart(2, "0")}
     </div>
-    <img src={Image.Lengushopping} />
-    {/* <a href="#" className="btn-flip" data-back="Alışverişə" data-front="Başla"></a> */}
+    <img style={{ width: "150px" }} src={Image.Lengushopping} />
     <Link to="/shop" className="btn-flip" data-back="Alışverişə" data-front="Başla"></Link>
 
     </div>

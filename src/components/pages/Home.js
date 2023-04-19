@@ -9,17 +9,19 @@ const Home=()=> {
   return (
     <div className='container pb-5 bt-5 mt-5 mb-5'>
       <div className='row'>
-        <div className='col-md-3'> 
+        <div className='col-lg-3 col-md-12 col-xs-12 subres'> 
 <Submenucatalog />
         </div>
-        <div className='col-md-6'>
+        <div className='col-lg-6 col-md-12 col-xs-12 carouselresp'>
           <CarouselImage />
           <Discount/>
         </div>
 
       
-      <div className='col-md-3 col-12 countdown-container'>
-        <CountdownClock />
+      <div className='col-lg-3 col-md-12 col-xs-12  countdown-container'>
+<div className='container'> 
+<CountdownClock />
+</div>
       </div>
       </div>
       <ConsultationRequest />

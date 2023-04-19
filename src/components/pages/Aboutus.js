@@ -14,7 +14,7 @@ function Aboutus() {
         <img src={Image.ShoppingGif} />
       </div>
 
-      <div className="d-flex ">
+      <div className="d-flex aboutcard ">
         <div className="about-container">
           <div className="card">
             <div className="lines"></div>

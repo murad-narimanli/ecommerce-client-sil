@@ -185,3 +185,23 @@
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
+@media only screen and (max-width: 750px) and (min-width: 360px)  {
+.about{
+  .header{
+    flex-direction: column;
+    .text{
+      h3{
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .aboutcard{
+    flex-direction: column;
+  }
+}
+}
+@media only screen and (max-width: 1180px) and (min-width: 768px)  {
+  .aboutcard{
+    flex-direction: column;
+  }
+}

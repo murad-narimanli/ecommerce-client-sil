@@ -7,7 +7,6 @@ import { BsHeartFill } from 'react-icons/bs';
 import { AiOutlineShoppingCart} from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 
-
 const Header = () => {
 
   const navigate = useNavigate();
@@ -32,7 +31,7 @@ const Header = () => {
     <div>
       <div className="header">
         <div className="container ">
-          <nav className="d-flex justify-content-between align-items-center">
+          <nav className="d-flex justify-content-between align-items-center navheader">
             <div>
               <img
                 className="bravologo mt-4"
@@ -61,3 +60,7 @@ const Header = () => {
 
 
 export default Header;
+
+
+
+

@@ -1,41 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "../../assets/scss/Header.scss";
-import { useLocation, NavLink } from "react-router-dom";
+
 function Menu() {
-  // let location =useLoaction()
-  // let {pathname}=location
+  const [expanded, setExpanded] = useState(false);
+
+  const closeMenu = () => {
+    setExpanded(false);
+  };
 
   return (
-    <div className="container">
-      <Navbar expand="lg">
-        <Navbar.Toggle aria-controls="basic-navbar-nav " />
-        <Navbar.Collapse>
-          <Nav className="me-2">
-            <NavLink to="./" className="text-decoration-none list-item">
-              {" "}
-              <Nav.Link href="#link">Ana Səhifə</Nav.Link>
+    <Navbar expand="lg" expanded={expanded}>
+      <div className="container">
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => setExpanded(!expanded)}
+        >
+          <div className="d-flex align-items-center">
+            <span>Menu</span>
+            <FontAwesomeIcon icon={faBars} className="ms-2" />
+          </div>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="closemenu" onClick={closeMenu}>
+            <NavLink to="/" className="nav-link">
+              Ana Səhifə
             </NavLink>
-            <NavLink to="./aboutus" className="text-decoration-none list-item">
-              {" "}
-              <Nav.Link href="#link">Haqqımızda</Nav.Link>
+            <NavLink to="/aboutus" className="nav-link">
+              Haqqımızda
             </NavLink>
-            <NavLink to="./blog" className="text-decoration-none list-item">
-              {" "}
-              <Nav.Link href="#link" className="list-item"> Bloq</Nav.Link>{" "}
+            <NavLink to="/blog" className="nav-link">
+              Bloq
             </NavLink>
-            <NavLink to="./shop" className="text-decoration-none list-item">
-              {" "}
-              <Nav.Link href="#link" className="list-item">Məhsullar</Nav.Link>{" "}
+            <NavLink to="/shop" className="nav-link">
+              Məhsullar
             </NavLink>
-            <NavLink to="./contactus" className="text-decoration-none list-item">
-              {" "}
-              <Nav.Link href="#link" className="list-item">Əlaqə</Nav.Link>{" "}
+            <NavLink to="/contactus" className="nav-link">
+              Əlaqə
             </NavLink>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    </div>
+      </div>
+    </Navbar>
   );
 }
 
