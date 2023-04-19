@@ -12,10 +12,11 @@ import Image from "../../assets/image/image";
 import { useState } from "react";
 const { Meta } = Card;
 function ProductItem() {
-  const [basket, setBasket] = useState([]);
-  
-  function addToCart(id) {
-    const currentProduct = products.find((product) => product.id === id);
+  let [basket, setBasket] = useState(
+    JSON.parse(localStorage.getItem("basket")) || []
+  );
+
+  function addToCart(currentProduct) {
     let existingProduct = basket.find(
       (product) => product.id === currentProduct.id
     );
@@ -25,9 +26,8 @@ function ProductItem() {
     } else {
       setBasket([...basket, { ...currentProduct, count: 1 }]);
     }
-
-    basket.push(currentProduct);
     localStorage.setItem("basket", JSON.stringify(basket));
+    console.log("basket", basket);
   }
   return (
     <div>
@@ -40,7 +40,7 @@ function ProductItem() {
           <div className="text-center counter pb-3 pt-3">
             <ShoppingCartOutlined
               className="basket-icon"
-              onClick={() => addToCart(product.id)}
+              onClick={() => addToCart(product)}
               data-id={product.id}
             />
           </div>
