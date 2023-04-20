@@ -14,7 +14,7 @@ let Image = {
   Blogimg0,
   ShoppingGif,
   Lengushopping,
-  Product1,
+  Product1
 };
 
 export default Image;
