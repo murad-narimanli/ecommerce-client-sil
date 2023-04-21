@@ -4,12 +4,10 @@ import "../../assets/scss/BravoTv.scss";
 function BravoTv() {
   return (
     <div className="bravotv">
-        <h1>BravoTv</h1>
+      <h1>BravoTv</h1>
       <div className="container">
         <div className="youtube">
           <iframe
-            width="320"
-            height="200"
             src="https://www.youtube.com/embed/C6p988OZeyE"
             title="YouTube video player"
             frameborder="0"
@@ -20,8 +18,6 @@ function BravoTv() {
         </div>
         <div className="youtube">
           <iframe
-            width="320"
-            height="200"
             src="https://www.youtube.com/embed/EvG_EY31wRw"
             title="YouTube video player"
             frameborder="0"
@@ -32,8 +28,6 @@ function BravoTv() {
         </div>
         <div className="youtube">
           <iframe
-            width="320"
-            height="200"
             src="https://www.youtube.com/embed/4KUQ4GAcDN0"
             title="YouTube video player"
             frameborder="0"
@@ -44,8 +38,6 @@ function BravoTv() {
         </div>{" "}
         <div className="youtube">
           <iframe
-            width="320"
-            height="200"
             src="https://www.youtube.com/embed/1KKX4Fbc4Ks"
             title="YouTube video player"
             frameborder="0"

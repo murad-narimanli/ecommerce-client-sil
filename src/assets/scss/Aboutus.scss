@@ -17,7 +17,6 @@
     margin-top: 100px;
     position: relative;
     display: flex;
-    // padding: 80px 40px;
     padding: 35px 13px;
 
     justify-content: center;
@@ -28,9 +27,7 @@
       position: relative;
       width: 350px;
       height: 180px;
-      //   border: none;
       transition: 0.5s;
-      //   background-color: #e7792bce;
       &:hover {
         height: 450px;
         animation-play-state: running;
@@ -51,8 +48,8 @@
         .content {
           .details {
             transform: translate(0px);
-            p{
-                opacity: 1;
+            p {
+              opacity: 1;
             }
           }
         }
@@ -185,23 +182,23 @@
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
-@media only screen and (max-width: 750px) and (min-width: 360px)  {
-.about{
-  .header{
-    flex-direction: column;
-    .text{
-      h3{
-        font-size: 1.1rem;
+@media only screen and (max-width: 750px) and (min-width: 360px) {
+  .about {
+    .header {
+      flex-direction: column;
+      .text {
+        h3 {
+          font-size: 1.1rem;
+        }
       }
     }
-  }
-  .aboutcard{
-    flex-direction: column;
+    .aboutcard {
+      flex-direction: column;
+    }
   }
 }
-}
-@media only screen and (max-width: 1180px) and (min-width: 768px)  {
-  .aboutcard{
+@media only screen and (max-width: 1180px) and (min-width: 768px) {
+  .aboutcard {
     flex-direction: column;
   }
 }

@@ -1,34 +1,32 @@
 @media screen and (min-width: 768px) {
-    .header {
-      nav {
+  .header {
+    nav {
+      /* ... */
+      justify-content: space-between;
+
+      .button-container {
         /* ... */
-        justify-content: space-between;
-  
-        .button-container {
-          /* ... */
-          margin-top: 0;
-          gap: 1.5rem;
-  
-          button {
-            /* ... */
-            width: auto;
-            padding: 0.5rem 1rem;
-          }
-        }
-  
-        .wishList,
-        .shoppingCard {
+        margin-top: 0;
+        gap: 1.5rem;
+
+        button {
           /* ... */
           width: auto;
+          padding: 0.5rem 1rem;
         }
-  
-        .search-container {
-          /* ... */
-          order: 3;
-          margin-left: auto;
-        }
+      }
+
+      .wishList,
+      .shoppingCard {
+        /* ... */
+        width: auto;
+      }
+
+      .search-container {
+        /* ... */
+        order: 3;
+        margin-left: auto;
       }
     }
   }
-  
-  
+}

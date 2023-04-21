@@ -1,9 +1,9 @@
-$button-background-color: #2FDB00;
+$button-background-color: #2fdb00;
 $button-text-color: #fff;
 $button-opacity: 1;
-.blog-date{
-   color: #2FDB00; 
-   font-weight: 500;
+.blog-date {
+  color: #2fdb00;
+  font-weight: 500;
 }
 .blog_btn {
   background-color: $button-background-color;
@@ -16,36 +16,34 @@ $button-opacity: 1;
   opacity: $button-opacity;
   cursor: pointer;
 
-
   &:hover {
     background-color: #2ee600;
     opacity: 0.8;
-    color:$button-text-color;
-
+    color: $button-text-color;
   }
 }
-.blog_icon{
+.blog_icon {
   font-size: 24px;
   color: white;
   display: flex;
   justify-content: end;
 }
-.detail_footer{
+.detail_footer {
   padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
 }
-.back_icon{
+.back_icon {
   font-size: 20px;
   position: absolute;
   display: flex;
-  left:10px;
+  left: 10px;
 }
-.blogdetail_btn{
+.blogdetail_btn {
   position: absolute;
-  right:10px;
+  right: 10px;
   top: 15px;
-  $button-background-color: #2FDB00;
+  $button-background-color: #2fdb00;
 }

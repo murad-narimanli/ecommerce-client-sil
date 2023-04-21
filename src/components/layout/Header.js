@@ -3,28 +3,27 @@ import "../../assets/scss/Header.scss";
 import Menu from "../elements/Menu";
 import Image from "../../assets/image/image";
 import Searchnav from "../elements/Searchbar";
-import { BsHeartFill } from 'react-icons/bs';
-import { AiOutlineShoppingCart} from 'react-icons/ai';
-import { useNavigate } from 'react-router-dom';
+import { BsHeartFill } from "react-icons/bs";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-
   const navigate = useNavigate();
 
   const registration = () => {
-    navigate('/registration');
+    navigate("/registration");
   };
 
   const wishList = () => {
-    navigate('/wishlist');
+    navigate("/wishlist");
   };
 
   const basket = () => {
-    navigate('/basket');
+    navigate("/basket");
   };
 
   const login = () => {
-    navigate('/login');
+    navigate("/login");
   };
 
   return (
@@ -40,15 +39,19 @@ const Header = () => {
                 style={{ width: "200px" }}
               />
             </div>
-            <div>
-            </div>
+            <div></div>
             <div className="d-flex button-container">
-              <Searchnav/>
-              <button onClick={login} > Daxil ol </button>
+              <Searchnav />
+              <button onClick={login}> Daxil ol </button>
               <button onClick={registration}>Qeydiyyatdan keç</button>
-              <button onClick={wishList} className="wishList"> <BsHeartFill/> </button>
-              <button onClick={basket} className="shoppingCard"> <AiOutlineShoppingCart/> </button>
-             
+              <button onClick={wishList} className="wishList">
+                {" "}
+                <BsHeartFill />{" "}
+              </button>
+              <button onClick={basket} className="shoppingCard">
+                {" "}
+                <AiOutlineShoppingCart />{" "}
+              </button>
             </div>
           </nav>
         </div>
@@ -58,9 +61,4 @@ const Header = () => {
   );
 };
 
-
 export default Header;
-
-
-
-

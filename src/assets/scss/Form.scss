@@ -1,14 +1,15 @@
-.login , .registration {
+.login,
+.registration {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.registration{
-    .box{
-      width: 495px;
-      height: 504px;
-    }
+.registration {
+  .box {
+    width: 495px;
+    height: 504px;
+  }
 }
 
 .box {
@@ -212,9 +213,7 @@
   }
 }
 
-
-
-@media only screen and (max-width: 750px) and (min-width: 360px)  {
+@media only screen and (max-width: 750px) and (min-width: 360px) {
   .box form .inputBox {
     position: relative;
     width: 215px;
