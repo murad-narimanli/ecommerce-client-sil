@@ -94,6 +94,71 @@ h3 {
   }
 
   .counter {
-    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
   }
+}
+.basket_btn2 {
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #6cc32e;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.basket_btn2:hover {
+  background-color: #2FDB00;
+  transform: translateY(-2px);
+}
+.bg-image {
+  
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bg-image:hover {
+  transform: scale(1.1);
+}
+
+#totalPrice,
+#totalPrice:after {
+  display: block;
+  font-size: 30px;
+  color: red;
+  white-space: pre;
+  font-weight: bold;
+  position: relative;
+}
+
+#totalPrice:after {
+  content: attr(data-text);
+  color: #2FDB00;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  overflow: hidden;
+  transition: 5s linear width;
+  -webkit-transition: 5s linear width;
+  -moz-transition: 5s linear width;
+  -o-transition: 5s linear width;
+  -ms-transition: 5s linear width;
+}
+
+#totalPrice:hover:after {
+  width: 100%;
+  cursor: pointer;
+}
+.remove-item{
+  font-size: 26px;
+  color: red;
+  font-weight: 700;
+ 
 }
