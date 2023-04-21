@@ -126,12 +126,12 @@
   color: rgb(132, 191, 65);
 }
 
-@media only screen and (max-width: 750px) and (min-width: 360px)  {
+@media only screen and (max-width: 750px) and (min-width: 360px) {
   .container .right {
     width: 100%;
     margin-top: 59px;
   }
-  .contactcontainer{
+  .contactcontainer {
     flex-direction: column;
   }
   .container .left .up p {
@@ -145,7 +145,7 @@
   .container .right iframe {
     width: 345px;
     height: 325px;
-}
+  }
 
   .container .right .boxContact {
     width: 310px;
@@ -156,12 +156,11 @@
     border: solid 1px rgba(132, 191, 65, 0.28);
     box-shadow: 0 12px 14px 0 rgba(132, 191, 65, 0.26);
     margin-top: -3px;
-
   }
 }
 
-@media only screen and (max-width: 1180px) and (min-width: 768px)  {
-  .contactcontainer{
+@media only screen and (max-width: 1180px) and (min-width: 768px) {
+  .contactcontainer {
     flex-direction: column;
   }
 }

@@ -8,7 +8,7 @@ function CarouselImage() {
     <div className="container w-100 carouselresp">
       <Carousel autoplay>
         <div>
-          <img src={Image.Carousel2}  className="w-100" />
+          <img src={Image.Carousel2} className="w-100" />
         </div>
         <div>
           <img src={Image.Carousel3} className="w-100" />

@@ -1,0 +1,122 @@
+.payment {
+  width: 700px;
+  min-height: 800px;
+  border: 1px solid rgb(132, 191, 65);
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding: 20px 30px;
+  background: rgb(248, 251, 245);
+  h4 {
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 14px;
+    .inputRadio {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      height: 70px;
+      border-radius: 5px;
+
+      label {
+        margin-right: 40px;
+        margin-top: 20px;
+      }
+      margin-bottom: 20px;
+      margin-top: 5px;
+      border: 1px solid rgb(129, 188, 61);
+    }
+    input[type="radio"] {
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid gray;
+      transition: all 0.2s ease-in-out;
+      &:checked {
+        border-color: green;
+        background-color: green;
+      }
+    }
+    input {
+      margin-bottom: 20px;
+      margin-top: 5px;
+      background: transparent;
+      border: 1px solid rgb(132, 191, 65);
+      outline: none;
+      width: 600px;
+      height: 40px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    select {
+      width: 600px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid rgb(132, 191, 65);
+      background: transparent;
+      outline: none;
+      margin-bottom: 20px;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+    textarea {
+      width: 600px;
+      height: 80px;
+      padding: 10px;
+      border: 1px solid rgb(132, 191, 65);
+      background: transparent;
+      outline: none;
+      margin-bottom: 20px;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+  }
+  button {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(129, 188, 61);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .payment {
+    width: 500px;
+    min-height: 800px;
+
+    label {
+      input {
+        width: 400px;
+      }
+      select {
+        width: 400px;
+      }
+      textarea {
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .payment {
+    width: 350px;
+    min-height: 800px;
+
+    label {
+      input {
+        width: 300px;
+      }
+      select {
+        width: 300px;
+      }
+      textarea {
+        width: 300px;
+      }
+    }
+  }
+}

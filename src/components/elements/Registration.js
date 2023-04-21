@@ -42,10 +42,7 @@ const Registration = () => {
                 Daxil ol
               </a>
             </div>
-            <button>
-            Qeydiyyat
-            </button>
-            
+            <button>Qeydiyyat</button>
           </form>
         </div>
       </div>

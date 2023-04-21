@@ -1,18 +1,20 @@
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import "../../assets/scss/WishList.scss";
-import { ShoppingCartOutlined, CloseOutlined } from "@ant-design/icons";
+import { CloseOutlined } from "@ant-design/icons";
 import "../../assets/scss/Basket.scss";
 import { Button, Space } from "antd";
 import swal from "sweetalert";
 import Image from "../../assets/image/image";
-import { products } from "../../api/db";
-import Shop from "../pages/Shop";
 
 const Basket = () => {
   const navigate = useNavigate();
+
+  const payment = () => {
+    navigate("/payment");
+  };
+
   const [count, setCount] = useState(1);
   let [basket, setBasket] = useState(
     JSON.parse(localStorage.getItem("basket"))
@@ -159,7 +161,8 @@ const Basket = () => {
               <h3 id="totalPrice">
                 Total Price:
                 {basket.reduce(
-                  (total, product) => total + product.price * product.count.toFixed(2),
+                  (total, product) =>
+                    total + product.price * product.count.toFixed(2),
                   0
                 )}
               </h3>
@@ -172,7 +175,9 @@ const Basket = () => {
               >
                 Səbəti boşalt!
               </Button>
-              <Button className="basket_btn ms-3">Sifarişi təsdiqlə</Button>
+              <Button onClick={payment} className="basket_btn ms-3">
+                Sifarişi təsdiqlə
+              </Button>
             </div>
           </Space>
         </div>

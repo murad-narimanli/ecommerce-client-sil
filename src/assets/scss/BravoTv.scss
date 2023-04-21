@@ -1,22 +1,30 @@
 .bravotv {
+  width: 100%;
+  min-height: 380px;
   background-color: rgb(132, 191, 65);
-  height: 380px;
   margin-bottom: 150px;
   display: flex;
   flex-direction: column;
-  h1{
+  h1 {
     color: #fff;
     margin-bottom: 20px;
   }
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   .container {
     display: flex;
     justify-content: center;
+
     align-items: center;
     .youtube {
       margin-left: 20px;
-      p{
+      display: flex;
+      flex-direction: column;
+      iframe {
+        width: 320;
+        height: 200;
+      }
+      p {
         color: #fff;
         margin-top: 10px;
       }
@@ -24,13 +32,43 @@
   }
 }
 
-
-.partners{
+.partners {
   margin-bottom: 100px;
-  img{
-    width: 150px;
-    height: 80px;
-    object-fit: contain;
-    margin-right: 40px;
+  .imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: 150px;
+      height: 80px;
+      object-fit: contain;
+      margin-right: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .bravotv {
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      .youtube {
+        margin-left: 20px;
+        display: flex;        
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .partners {
+    margin-bottom: 100px;
+    img {
+      width: 120px;
+      height: 80px;
+      object-fit: contain;
+      margin-right: 40px;
+    }
   }
 }

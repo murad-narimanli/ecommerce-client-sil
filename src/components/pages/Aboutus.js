@@ -27,8 +27,8 @@ function Aboutus() {
                 <p>
                   Şirkət olaraq viziyonumuz fəaliyyət göstərdiyimiz sahədə öz
                   effektivliyilə seçilən və yüksək iqtisadi göstəricilərə malik
-                  olan lider şirkət olmaqdır.Oz əməkdaşlarının
-                  maddi , həmçinin iş şəraitinin yaxşılaşdırılması sahəsində əməli işlər görür
+                  olan lider şirkət olmaqdır.Oz əməkdaşlarının maddi , həmçinin
+                  iş şəraitinin yaxşılaşdırılması sahəsində əməli işlər görür
                 </p>
               </div>
             </div>

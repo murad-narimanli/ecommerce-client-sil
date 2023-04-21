@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Modal, Form, Input, Button } from 'antd';
-import { VideoCameraAddOutlined } from '@ant-design/icons';
-import "../../assets/scss/Home.scss"
+import React, { useState } from "react";
+import { Modal, Form, Input, Button } from "antd";
+import { VideoCameraAddOutlined } from "@ant-design/icons";
+import "../../assets/scss/Home.scss";
 
 const { TextArea } = Input;
 
@@ -28,24 +28,46 @@ const ConsultationRequest = () => {
 
   return (
     <>
-      <Button className='videobutton' onClick={showModal} icon={<VideoCameraAddOutlined />}></Button>
-      <Modal title="Video Canlı Zəng" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+      <Button
+        className="videobutton"
+        onClick={showModal}
+        icon={<VideoCameraAddOutlined />}
+      ></Button>
+      <Modal
+        title="Video Canlı Zəng"
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+      >
         <Form form={form} layout="vertical">
           <Form.Item name="name" label="Adınız" rules={[{ required: true }]}>
             <Input />
           </Form.Item>
-          <Form.Item name="phone" label="Whatsapp Nömrəniz" rules={[{ required: true }]}>
+          <Form.Item
+            name="phone"
+            label="Whatsapp Nömrəniz"
+            rules={[{ required: true }]}
+          >
             <Input />
           </Form.Item>
-          <Form.Item name="interests" label="Maraqlandığınız məhsullar" rules={[{ required: true }]}>
+          <Form.Item
+            name="interests"
+            label="Maraqlandığınız məhsullar"
+            rules={[{ required: true }]}
+          >
             <TextArea rows={3} />
           </Form.Item>
         </Form>
       </Modal>
       {formData && (
-        <Modal title="Video Konsultasiya" visible={true} footer={null} onCancel={() => setFormData(null)}>
+        <Modal
+          title="Video Konsultasiya"
+          visible={true}
+          footer={null}
+          onCancel={() => setFormData(null)}
+        >
           <p>Adınız: {formData.name}</p>
-          <p>Whatsapp  Nömrəniz: {formData.phone}</p>
+          <p>Whatsapp Nömrəniz: {formData.phone}</p>
           <p>Maraqlandığınız məhsullar: {formData.interests}</p>
           <p>Sizinlə tez bir zamanda əlaqə saxlayacağıq.</p>
         </Modal>

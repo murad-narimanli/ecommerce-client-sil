@@ -4,11 +4,9 @@ import { FiMessageCircle } from "react-icons/fi";
 import { MdLocalPhone } from "react-icons/md";
 import { GoLocation } from "react-icons/go";
 import swal from "sweetalert";
-import "../../assets/scss/Contact.scss"
+import "../../assets/scss/Contact.scss";
 
 function Contactus() {
- 
-
   const Alert = () => {
     swal({
       title: "Təşəkkürlər!",
@@ -74,7 +72,6 @@ function Contactus() {
             <input type="radio" name="clr1" />
           </div>
         </div>
-       
       </div>
     </div>
   );

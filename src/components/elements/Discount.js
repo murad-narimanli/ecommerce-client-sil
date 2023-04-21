@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 function Discount() {
   return (
-    <div className='p-3 discount mt-3'>
-        <span className='dicount_text'>Bravo bonus kartı əldə et cashback qazan.</span>
+    <div className="p-3 discount mt-3">
+      <span className="dicount_text">
+        Bravo bonus kartı əldə et cashback qazan.
+      </span>
     </div>
-  )
+  );
 }
 
-export default Discount
+export default Discount;

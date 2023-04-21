@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "antd";
 import "../../assets/scss/Blog.scss";
 import Image from "../../assets/image/image";
-import { ShareAltOutlined ,ArrowLeftOutlined} from "@ant-design/icons";
+import { ShareAltOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 import {
   FacebookOutlined,
   InstagramOutlined,
@@ -29,7 +29,7 @@ function BlogDetail() {
   const handleOk = () => {
     setIsModalOpen(false);
   };
- 
+
   const handleCancel = () => {
     setIsModalOpen(false);
   };
@@ -73,13 +73,18 @@ function BlogDetail() {
           ilıq su ilə yuyun və dərinizin canlı görünüşündən zövq alın.
         </p>
         <Card className="detail_footer  p-2">
-          <ArrowLeftOutlined className=" back_icon"
+          <ArrowLeftOutlined
+            className=" back_icon"
             onClick={() => {
               navigate("/blog");
             }}
           />
-          
-          <Button type="primary" className="blogdetail_btn " onClick={showModal}>
+
+          <Button
+            type="primary"
+            className="blogdetail_btn "
+            onClick={showModal}
+          >
             <ShareAltOutlined className="blog_icon  y-auto" />
           </Button>
         </Card>
@@ -102,22 +107,37 @@ function BlogDetail() {
           <Card>
             <FacebookOutlined style={{ fontSize: "24px", color: "#1877F2" }} />
           </Card> */}
-          <Card onClick={() => window.open('https://twitter.com/BravoAZS')}>
-        <TwitterOutlined style={{ fontSize: "24px", color: "#1DA1F2" }} />
-      </Card>
-      <Card onClick={() => window.open('https://www.youtube.com/channel/UCUDPswYmu2SCJQCr7qDdtwA')}>
-  <YoutubeOutlined style={{ fontSize: "24px", color: "#25D366" }} />
-</Card>
-   
-      <Card onClick={() => window.open('https://www.instagram.com/bravosupermarketaz/')}>
-        <InstagramOutlined style={{ fontSize: "24px", color: "#E1306C" }} />
-      </Card>
-      <Card onClick={() => window.open('https://www.facebook.com/BravoSupermarketAz/?locale=ru_RU')}>
-        <FacebookOutlined style={{ fontSize: "24px", color: "#1877F2" }} />
-      </Card>
+          <Card onClick={() => window.open("https://twitter.com/BravoAZS")}>
+            <TwitterOutlined style={{ fontSize: "24px", color: "#1DA1F2" }} />
+          </Card>
+          <Card
+            onClick={() =>
+              window.open(
+                "https://www.youtube.com/channel/UCUDPswYmu2SCJQCr7qDdtwA"
+              )
+            }
+          >
+            <YoutubeOutlined style={{ fontSize: "24px", color: "#25D366" }} />
+          </Card>
+
+          <Card
+            onClick={() =>
+              window.open("https://www.instagram.com/bravosupermarketaz/")
+            }
+          >
+            <InstagramOutlined style={{ fontSize: "24px", color: "#E1306C" }} />
+          </Card>
+          <Card
+            onClick={() =>
+              window.open(
+                "https://www.facebook.com/BravoSupermarketAz/?locale=ru_RU"
+              )
+            }
+          >
+            <FacebookOutlined style={{ fontSize: "24px", color: "#1877F2" }} />
+          </Card>
         </Modal>
       </Card>
-      
     </div>
   );
 }

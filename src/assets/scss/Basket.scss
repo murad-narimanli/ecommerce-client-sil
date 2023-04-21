@@ -20,63 +20,6 @@
     }
 }
 
-
-// // Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) { 
-//   .basket {
-//     padding-top: 3rem;
-//     padding-bottom: 3rem;
-//   }
-// }
-
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) { 
-//   .basket {
-//     padding-top: 4rem;
-//     padding-bottom: 4rem;
-//   }
-  
-//   .basket_img {
-//     max-height: 100px;
-//   }
-  
-//   .counter {
-//     width: 120px;
-//   }
-// }
-
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) { 
-//   .basket {
-//     padding-top: 5rem;
-//     padding-bottom: 5rem;
-//   }
-  
-//   .basket_img {
-//     max-height: 150px;
-//   }
-  
-//   .counter {
-//     width: 150px;
-//   }
-// }
-
-// // Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) { 
-//   .basket {
-//     padding-top: 6rem;
-//     padding-bottom: 6rem;
-//   }
-  
-//   .basket_img {
-//     max-height: 200px;
-//   }
-  
-//   .counter {
-//     width: 200px;
-//   }
-// }
-
 /* Varsayılan stiller */
 .container {
   max-width: 100%;
@@ -114,15 +57,6 @@ h3 {
   height: 100px;
   width: auto;
 }
-
-// .counter {
-  
-//   border-radius: 0.25rem;
-//   display: inline-block;
-//   font-size: 1rem;
-//   line-height: 1.5;
- 
-// }
 
 /* Medya sorguları */
 

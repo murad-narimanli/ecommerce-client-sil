@@ -10,7 +10,7 @@ function Blog() {
   const date = "01/01/2023";
   const text =
     "Mövsüm fərqi olmadan özümüzə və üzümüzə qulluq etmək mütləqdir. Yayda günəş şüalarının faydaları olsa da, düzgün saatlarda günəşlənməsək zərərli tərəfləri ilə qarşılaşarıq....";
-let navigate=useNavigate()
+  let navigate = useNavigate();
   return (
     <div className="container d-flex justify-content-center mb-5 mt-5">
       <Card
@@ -21,9 +21,12 @@ let navigate=useNavigate()
         <Meta title={title} className="pb-3" />
         <p className="blog-date">{date}</p>
         <p>{text}</p>
-        <a  className="blog_btn" onClick={()=>{
-          navigate('/blogdetail')
-        }}>
+        <a
+          className="blog_btn"
+          onClick={() => {
+            navigate("/blogdetail");
+          }}
+        >
           Daha ətraflı
         </a>
       </Card>
