@@ -1,14 +1,14 @@
 import Layout from "./components/layout/Layout"
 import Routing from "./components/layout/Routing";
 import { BrowserRouter } from "react-router-dom";
-import { Provider } from 'react-redux';
-import store from "../src/store"
+// import { Provider } from 'react-redux';
+// import store from "../src/store"
 
 
 
 function App() {
   return (
-    <Provider store={store}>
+    // <Provider store={store}>
 
     <div className="App">
       <BrowserRouter>
@@ -18,7 +18,7 @@ function App() {
       </BrowserRouter>
    
     </div>
-    </Provider>
+    // </Provider>
 
   );
 }
