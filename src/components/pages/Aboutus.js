@@ -1,21 +1,42 @@
-import React from "react";
+
+import React, { useEffect, useState } from "react";
 import "../../assets/scss/Aboutus.scss";
 import Image from "../../assets/image/image";
+import client from "../../api/api";
+import Vision from "../elements/Vision";
+import Mission from "../elements/Mission";
+import Aboutstore from "./Aboutstore";
 
 function Aboutus() {
+  const [data, setData]=useState ({})
+  useEffect(()=>{
+   getdata()
+
+  }, []);
+  const getdata = async()=>{
+    await client.get('title').then((res)=>{
+      if(res.data.length){
+        setData(res.data[0])
+      }
+    })
+  }
+
   return (
     <div className="container about">
       <div className="header d-flex align-items-center justify-content-between">
-        <div className="text">
-          <h1>RİFAHINIZ</h1>
+        <div className="textb">
+          {/* <h1>RİFAHINIZ</h1>
           <h1>MƏQSƏDİMİZDİR</h1>
-          <h3>Hər Zaman Xidmətinizdəyik!</h3>
+          <h3>Hər Zaman Xidmətinizdəyik!</h3> */}
+                  <div dangerouslySetInnerHTML={{ __html: data.title}} />
+
         </div>
+
         <img src={Image.ShoppingGif} />
       </div>
 
       <div className="d-flex aboutcard ">
-        <div className="about-container">
+        {/* <div className="about-container">
           <div className="card">
             <div className="lines"></div>
             <div className="imgBx">
@@ -33,8 +54,9 @@ function Aboutus() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="about-container">
+        </div> */}
+        <Vision />
+        {/* <div className="about-container">
           <div className="card">
             <div className="lines"></div>
             <div className="imgBx">
@@ -50,10 +72,12 @@ function Aboutus() {
                   təqdim edərək onların həyat rifahını qaldırırıq.
                 </p>
               </div>
+              
             </div>
           </div>
-        </div>
-        <div className="about-container">
+        </div> */}
+        <Mission />
+        {/* <div className="about-container">
           <div className="card">
             <div className="lines"></div>
             <div className="imgBx">
@@ -71,7 +95,8 @@ function Aboutus() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Aboutstore />
       </div>
     </div>
   );
