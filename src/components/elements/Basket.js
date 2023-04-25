@@ -153,7 +153,7 @@ const Basket = () => {
           <Space wrap>
             <div>
               <h3 id="totalPrice"  data-text="Total Price:">
-                Total Price:
+                Ümumi qiymət:
                 {basket.reduce(
                   (total, product) => total + product.price * product.count.toFixed(2),
                   0

@@ -1,13 +1,27 @@
 import React from "react";
 import "../../assets/scss/Form.scss";
 import { useNavigate } from "react-router-dom";
-
+import { useState } from "react";
+import db from "../../db.json" 
 const Login = () => {
+  
   const navigate = useNavigate();
+  const users = db.users;
 
   const registration = () => {
     navigate("/registration");
   };
+
+  const [username, setUsername]=useState("");
+  const [password, setPassword]=useState("");
+
+  const handleLogin = (username, password) => {
+      const user = users.find((obj) => obj.username === username && obj.password === password);
+      if(user){
+        navigate("/");
+        console.log("user",user);
+      }
+  }
 
   return (
     <div className="container login">
@@ -16,12 +30,12 @@ const Login = () => {
         <form action="">
           <h2>Daxil Ol</h2>
           <div class="inputBox">
-            <input type="text" required="required" />
+            <input onChange={(e) => setUsername(e.target.value)} type="text" required="required" />
             <span>İstifadəçi adı </span>
             <i></i>
           </div>
           <div class="inputBox">
-            <input type="password" required="required" />
+            <input onChange={(e) => setPassword(e.target.value)} type="password" required="required" />
             <span>Şifrə</span>
             <i></i>
           </div>
@@ -31,7 +45,7 @@ const Login = () => {
               Qeydiyyat
             </a>
           </div>
-          <button>Daxil Ol</button>
+          <button onClick={() => handleLogin(username,password)}>Daxil Ol</button>
         </form>
       </div>
     </div>
