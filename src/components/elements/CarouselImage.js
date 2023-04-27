@@ -23,69 +23,54 @@
 
 // export default CarouselImage;
 
-// import React, { useEffect } from "react";
-// import { Carousel } from "antd";
-// import { connect } from "react-redux";
-// import { getImage } from "../../redux/actions/mainactionslider";
-
-// const CarouselImage = ({ sliderimages, getImage }) => {
-//   useEffect(() => {
-//     getImage();
-//   }, []);
-
-//   return (
-//     <div className="container w-100 carouselresp">
-//       {sliderimages ? (
-//         <Carousel autoplay>
-//           {sliderimages.map((image, index) => (
-//             <div key={index}>
-//               <img src={image.imageUrl} className="w-100" alt="carousel" />
-//             </div>
-//           ))}
-//         </Carousel>
-//       ) : (
-//         <div>Loading...</div>
-//       )}
-//     </div>
-//   );
-// };
-
-// const mapStateToProps = (state) => ({
-//   sliderimages: state.sliderimages,
-// });
-
-// export default connect(mapStateToProps, { getImage })(CarouselImage);
-
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "antd";
-import { connect } from "react-redux";
-import { getImage } from "../../redux/actions/mainactionslider";
+import client from "../../api/api";
 
-const CarouselImage = ({ sliderimages, getImage }) => {
+
+function CarouselImage() {
+  const [data, setData] = useState([]);
+
   useEffect(() => {
-    getImage();
+    getData();
   }, []);
+
+  const getData = async () => {
+    try {
+      const res = await client.get("sliderimages");
+      if (res.data.length) {
+        setData(res.data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="container w-100 carouselresp">
-      {sliderimages ? (
-        <Carousel autoplay>
-          {sliderimages.map((image) => (
-            <div key={image.id}>
-              <img src={image.imageUrl} className="w-100" alt="carousel" />
-            </div>
-          ))}
-        </Carousel>
-      ) : (
-        <div>Loading...</div>
-
-      )}
-    </div>
-  );
+      <Carousel autoplay>
+        <div>
+          <img
+            src={data[0]?.image}
+            alt={data[0]?.id}
+            className="w-100" />
+        </div>
+        <div>
+          <img
+            src={data[1]?.image}
+            alt={data[1]?.id} 
+            className="w-100"/>
+        </div>
+        <div>
+          <img
+            src={data[2]?.image}
+            alt={data[2]?.id}
+             className="w-100" />
+        </div>
+       </Carousel>
+       </div>
+  )
 };
+    
 
-const mapStateToProps = (state) => ({
-  sliderimages: state.sliderimages,
-});
-
-export default connect(mapStateToProps, { getImage })(CarouselImage);
+  export default CarouselImage;
