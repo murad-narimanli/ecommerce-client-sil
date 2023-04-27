@@ -1,0 +1,72 @@
+.bravotv {
+  width: 100%;
+  min-height: 380px;
+  background-color: rgb(132, 191, 65);
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bravotv h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.bravotv .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bravotv .container .youtube {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.bravotv .container .youtube iframe {
+  width: 320;
+  height: 200;
+}
+.bravotv .container .youtube p {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.partners {
+  margin-bottom: 100px;
+}
+.partners .imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.partners .imgContainer img {
+  width: 150px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bravotv .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .bravotv .container .youtube {
+    margin-left: 20px;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .partners {
+    margin-bottom: 100px;
+  }
+  .partners img {
+    width: 120px;
+    height: 80px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 40px;
+  }
+}/*# sourceMappingURL=BravoTv.css.map */

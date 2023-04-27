@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.basket_img {
+  width: 300px;
+  height: 250px;
+}
+
+.basket_btn {
+  background-color: #2FDB00;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 2px 16px;
+  font-size: 16px;
+  opacity: 1;
+  cursor: pointer;
+}
+.basket_btn:hover {
+  background-color: #fff;
+  color: #2FDB00;
+}
+
+/* Varsayılan stiller */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cart {
+  margin-top: 2rem;
+}
+
+.basket_btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-top: 1rem;
+}
+
+.product_btn {
+  background-color: #f8f9fa;
+  border: none;
+  color: #000;
+}
+
+.basket_img {
+  height: 100px;
+  width: auto;
+}
+
+/* Medya sorguları */
+/* Ekran boyutu 768px ve daha büyük */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .basket_img {
+    height: 150px;
+  }
+  .counter {
+    font-size: 1.5rem;
+  }
+}
+/* Ekran boyutu 992px ve daha büyük */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .basket_img {
+    height: 200px;
+  }
+  .counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+}
+.basket_btn2 {
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #6cc32e;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.basket_btn2:hover {
+  background-color: #2FDB00;
+  transform: translateY(-2px);
+}
+
+.bg-image {
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.bg-image:hover {
+  transform: scale(1.1);
+}
+
+#totalPrice,
+#totalPrice:after {
+  display: block;
+  font-size: 30px;
+  color: red;
+  white-space: pre;
+  font-weight: bold;
+  position: relative;
+}
+
+#totalPrice:after {
+  content: attr(data-text);
+  color: #2FDB00;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  overflow: hidden;
+  transition: 5s linear width;
+  -webkit-transition: 5s linear width;
+  -moz-transition: 5s linear width;
+  -o-transition: 5s linear width;
+  -ms-transition: 5s linear width;
+}
+
+#totalPrice:hover:after {
+  width: 100%;
+  cursor: pointer;
+}
+
+.remove-item {
+  font-size: 26px;
+  color: red;
+  font-weight: 700;
+}/*# sourceMappingURL=Basket.css.map */

@@ -1,0 +1,47 @@
+.discount-icon {
+  color: #bb0000;
+}
+
+.heart-icon {
+  font-size: 18px !important;
+  overflow: hidden !important;
+  color: red !important;
+  overflow: hidden !important;
+}
+.heart-icon:hover {
+  color: #2fdb00 !important;
+}
+
+.basket-icon {
+  font-size: 18px !important;
+  color: #2fdb00 !important;
+}
+
+.share-icon {
+  font-size: 18px !important;
+  color: #2fdb00 !important;
+}
+
+.product-price {
+  font-size: 20px !important;
+}
+
+.product_btn {
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #6cc32e;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.product_btn:hover {
+  background-color: #2fdb00;
+  transform: translateY(-2px);
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=ProductItem.css.map */

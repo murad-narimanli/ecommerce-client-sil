@@ -10,6 +10,7 @@ import Basket from "../elements/Basket";
 import Login from "../elements/Login";
 import Registration from "../elements/Registration";
 import Payment from "../elements/Payment";
+import Detail from "../pages/Detail";
 
 const Routing = () => {
   return (
@@ -25,6 +26,7 @@ const Routing = () => {
       <Route path="login" element={<Login />} />
       <Route path="registration" element={<Registration />} />
       <Route path="basket" element={<Basket />} />
+      <Route path="detail" element={<Detail />} />
     </Routes>
   );
 };
