@@ -65,6 +65,25 @@ a.nav-link {
         font-size: 16px;
         border-radius: 5px;
       }
+      .basketBtn {
+        .number {
+          position: absolute;
+          right: 105px;
+          top: 10px;
+          z-index: 99999;
+          text-align: center;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: red;
+          color: #fff;
+        }
+        .shoppingCard {
+          position: relative;
+          height: 55px;
+          font-size: 20px;
+        }
+      }
     }
   }
 }

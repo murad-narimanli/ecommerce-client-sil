@@ -79,7 +79,6 @@ const Basket = () => {
     setBasket(null);
     Alert();
   };
-  
 
   return (
     <div className="container basket pt-5 pb-5">
@@ -89,72 +88,71 @@ const Basket = () => {
           {basket.map((product) => (
             <div>
               <div className="table-responsive">
-              <table className=" table table-bordered table-basket ">
-                <thead>
-                  <tr>
-
-                    <th>Şəkil</th>
-                    <th>Ad</th>
-                    <th>Qiymət</th>
-                    <th>Say</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr key={product.id}>
-                    
-                    <td className="d-flex align-items-center">
-                      <div className="bg-image pb-5">
-                      {" "}
-                      <img
-                        src={Image.Product1}
-                        alt="bal"
-                        className="basket_img"
-                      />
-                      </div>
-                    </td>
-                    <td>
-                      {" "}
-                      <h5 className="y-auto pt-4">{product.name}</h5>
-                    </td>
-                    <td>
-                      <div className="d-flex justify-content-center align-items-center pt-3">
-                      <h2 className="">${product.price}</h2>
-                      </div>
-                    </td>
-                    <td>
-                      <div className=" counter pb-3 pt-3">
-                        <button
-                          className="basket_btn2 me-3"
-                          onClick={() => increment(product)}
-                        >
-                          +
-                        </button>
-                        <h2 id={product.id}>{product.count}</h2>
-                        <button
-                          className="basket_btn2 ms-3"
-                          onClick={() => decrement(product)}
-                        >
-                          -
-                        </button>
-                      </div>
-                    </td>
-                    <td className="pt-2 ">
-                      <div className="x-auto text-center">
-                      <CloseOutlined className="remove-item "
-                        onClick={() => removeProduct(product.id)}
-                      />
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <table className=" table table-bordered table-basket ">
+                  <thead>
+                    <tr>
+                      <th>Şəkil</th>
+                      <th>Ad</th>
+                      <th>Qiymət</th>
+                      <th>Say</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr key={product.id}>
+                      <td className="d-flex align-items-center">
+                        <div className="bg-image pb-5">
+                          {" "}
+                          <img
+                            src={Image.Product1}
+                            alt="bal"
+                            className="basket_img"
+                          />
+                        </div>
+                      </td>
+                      <td>
+                        {" "}
+                        <h5 className="y-auto pt-4">{product.name}</h5>
+                      </td>
+                      <td>
+                        <div className="d-flex justify-content-center align-items-center pt-3">
+                          <h2 className="">${product.price}</h2>
+                        </div>
+                      </td>
+                      <td>
+                        <div className=" counter pb-3 pt-3">
+                          <button
+                            className="basket_btn2 me-3"
+                            onClick={() => increment(product)}
+                          >
+                            +
+                          </button>
+                          <h2 id={product.id}>{product.count}</h2>
+                          <button
+                            className="basket_btn2 ms-3"
+                            onClick={() => decrement(product)}
+                          >
+                            -
+                          </button>
+                        </div>
+                      </td>
+                      <td className="pt-2 ">
+                        <div className="x-auto text-center">
+                          <CloseOutlined
+                            className="remove-item "
+                            onClick={() => removeProduct(product.id)}
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           ))}
           <Space wrap>
             <div>
-              <h3 id="totalPrice"  data-text="Total Price:">
+              <h3 id="totalPrice" data-text="Total Price:">
                 Total Price:
                 {basket.reduce(
                   (total, product) =>

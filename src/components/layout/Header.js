@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../assets/scss/Header.scss";
 import Menu from "../elements/Menu";
 import Image from "../../assets/image/image";
@@ -26,6 +26,8 @@ const Header = () => {
     navigate("/login");
   };
 
+  const [cartItems, setCartItems] = useState([]);
+
   return (
     <div>
       <div className="header">
@@ -39,19 +41,19 @@ const Header = () => {
                 style={{ width: "200px" }}
               />
             </div>
-            <div></div>
             <div className="d-flex button-container">
               <Searchnav />
               <button onClick={login}> Daxil ol </button>
               <button onClick={registration}>Qeydiyyatdan keç</button>
               <button onClick={wishList} className="wishList">
-                {" "}
-                <BsHeartFill />{" "}
+                <BsHeartFill />
               </button>
-              <button onClick={basket} className="shoppingCard">
-                {" "}
-                <AiOutlineShoppingCart />{" "}
-              </button>
+              <div className="basketBtn">
+              <div className="number">{cartItems.length}</div>
+                <button onClick={basket} className="shoppingCard">
+                  <AiOutlineShoppingCart />
+                </button>
+              </div>
             </div>
           </nav>
         </div>
