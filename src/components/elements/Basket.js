@@ -107,7 +107,7 @@ const Basket = () => {
                       <div className="bg-image pb-5">
                       {" "}
                       <img
-                        src={Image.Product1}
+                        src={product.img}
                         alt="bal"
                         className="basket_img"
                       />
