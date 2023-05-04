@@ -126,8 +126,8 @@ const Header = () => {
                 <BsHeartFill />
               </button>
               <div className="basketBtn">
-              <div className="number">{cartItems.length}</div>
-                <button onClick={basket} className="shoppingCard">
+              <div className="number">0</div>
+                <button onClick={handleBasket} className="shoppingCard">
                   <AiOutlineShoppingCart />
                 </button>
               </div>

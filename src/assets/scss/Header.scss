@@ -12,6 +12,13 @@
     color: #2fdb00 !important;
   }
 }
+
+.navbar {
+  .container{
+  padding: 0px 90px;
+
+  }
+}
 a.nav-link {
   color: #666;
 
@@ -49,6 +56,7 @@ a.nav-link {
 .header {
   width: 100%;
   margin-bottom: 20px;
+  padding: 20px 90px;
 
   .container {
     .button-container {
@@ -68,8 +76,8 @@ a.nav-link {
       .basketBtn {
         .number {
           position: absolute;
-          right: 105px;
-          top: 10px;
+          right: 90px;
+          top: 25px;
           z-index: 99999;
           text-align: center;
           width: 25px;

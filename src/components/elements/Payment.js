@@ -26,7 +26,7 @@ function Payment() {
     console.log(formData);
   };
   return (
-    <div className="container">
+    <div className="paymentContainer">
       <h1>Sifariş</h1>
       <form onSubmit={handleSubmit} className="payment">
         <h4>Müştəri</h4>

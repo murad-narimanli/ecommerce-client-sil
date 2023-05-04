@@ -5,7 +5,6 @@ function Slider(props) {
   return (
     <div>
       <div className="card slideCard">
-        <span>Endirim</span>
         <img src={props.imgUrl} />
         <b>{props.discount}</b>
         <h4>{props.name}</h4>

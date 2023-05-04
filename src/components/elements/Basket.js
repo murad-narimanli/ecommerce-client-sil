@@ -91,7 +91,6 @@ const Basket = () => {
               <table className=" table table-bordered table-basket ">
                 <thead>
                   <tr>
-
                     <th>Şəkil</th>
                     <th>Ad</th>
                     <th>Qiymət</th>

@@ -3,7 +3,7 @@ import ProductItem from "../elements/ProductItem";
 
 function Shop() {
   return (
-    <div className="container pt-5 pb-5">
+    <div className="container">
       <ProductItem />
     </div>
   );

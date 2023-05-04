@@ -47,3 +47,15 @@ $button-opacity: 1;
   top: 15px;
   $button-background-color: #2fdb00;
 }
+
+.blog{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 90px;
+  .cardBlog{
+    margin-right: 70px;
+    margin-top: 50px;
+  }
+}

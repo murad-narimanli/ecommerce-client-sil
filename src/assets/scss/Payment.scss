@@ -1,3 +1,10 @@
+.paymentContainer{
+
+  h1{
+    font-size: 34px;
+  }
+  padding: 20px 90px;
+}
 .payment {
   width: 700px;
   min-height: 800px;
@@ -8,6 +15,7 @@
   background: rgb(248, 251, 245);
   h4 {
     margin-bottom: 20px;
+    font-size: 24px;
   }
   label {
     font-size: 14px;
