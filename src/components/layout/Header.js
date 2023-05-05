@@ -125,9 +125,12 @@ const Header = () => {
               <button onClick={handleWishList} className="wishList">
                 <BsHeartFill />
               </button>
-              <button onClick={handleBasket} className="shoppingCard">
-                <AiOutlineShoppingCart />
-              </button>
+              <div className="basketBtn">
+              <div className="number">0</div>
+                <button onClick={handleBasket} className="shoppingCard">
+                  <AiOutlineShoppingCart />
+                </button>
+              </div>
             </div>
           </nav>
         </div>

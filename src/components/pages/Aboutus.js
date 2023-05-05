@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import "../../assets/scss/Aboutus.scss";
 import Image from "../../assets/image/image";
@@ -8,18 +7,17 @@ import Mission from "../elements/Mission";
 import Aboutstore from "./Aboutstore";
 
 function Aboutus() {
-  const [data, setData]=useState ({})
-  useEffect(()=>{
-   getdata()
-
+  const [data, setData] = useState({});
+  useEffect(() => {
+    getdata();
   }, []);
-  const getdata = async()=>{
-    await client.get('title').then((res)=>{
-      if(res.data.length){
-        setData(res.data[0])
+  const getdata = async () => {
+    await client.get("title").then((res) => {
+      if (res.data.length) {
+        setData(res.data[0]);
       }
-    })
-  }
+    });
+  };
 
   return (
     <div className="container about">
@@ -28,8 +26,7 @@ function Aboutus() {
           {/* <h1>RİFAHINIZ</h1>
           <h1>MƏQSƏDİMİZDİR</h1>
           <h3>Hər Zaman Xidmətinizdəyik!</h3> */}
-                  <div dangerouslySetInnerHTML={{ __html: data.title}} />
-
+          <div dangerouslySetInnerHTML={{ __html: data.title }} />
         </div>
 
         <img src={Image.ShoppingGif} />

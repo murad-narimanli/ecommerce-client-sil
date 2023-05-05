@@ -17,7 +17,7 @@ function Contactus() {
 
   return (
     <div>
-      <div className="container d-flex contactcontainer">
+      <div className="container d-flex justify-content-between contactContainer">
         <div className="left">
           <div className="up">
             <h1>Baş ofis</h1>

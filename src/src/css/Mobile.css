@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+  .header nav {
+    /* ... */
+    justify-content: space-between;
+  }
+  .header nav .button-container {
+    /* ... */
+    margin-top: 0;
+    gap: 1.5rem;
+  }
+  .header nav .button-container button {
+    /* ... */
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+  .header nav .wishList,
+  .header nav .shoppingCard {
+    /* ... */
+    width: auto;
+  }
+  .header nav .search-container {
+    /* ... */
+    order: 3;
+    margin-left: auto;
+  }
+}/*# sourceMappingURL=Mobile.css.map */

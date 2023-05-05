@@ -1,30 +1,24 @@
-.basket_img{
+@charset "UTF-8";
+.basket_img {
   width: 300px;
   height: 250px;
 }
 
-.basket_btn{
+.basket_btn {
   background-color: #2FDB00;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    text-decoration: none;
-    border-radius: 3px;
-    padding: 2px 16px;
-    font-size: 16px;
-    opacity: 1;
-    cursor: pointer;
-    &:hover{
-      background-color: #fff;
-      color: #2FDB00;
-    }
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 2px 16px;
+  font-size: 16px;
+  opacity: 1;
+  cursor: pointer;
 }
-.basket{
-  padding: 20px 90px;
-  h1{
-    font-size: 35px;
-font-weight: 600;
-  }
+.basket_btn:hover {
+  background-color: #fff;
+  color: #2FDB00;
 }
 
 /* Varsayılan stiller */
@@ -34,7 +28,7 @@ font-weight: 600;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -66,40 +60,32 @@ h3 {
 }
 
 /* Medya sorguları */
-
 /* Ekran boyutu 768px ve daha büyük */
 @media (min-width: 768px) {
   h1 {
     font-size: 3rem;
   }
-
   h3 {
     font-size: 2rem;
   }
-
   .basket_img {
     height: 150px;
   }
-
   .counter {
     font-size: 1.5rem;
   }
 }
-
 /* Ekran boyutu 992px ve daha büyük */
 @media (min-width: 992px) {
   h1 {
     font-size: 4rem;
   }
-
   h3 {
     font-size: 3rem;
   }
-
   .basket_img {
     height: 200px;
   }
-
   .counter {
     display: flex;
     flex-direction: row;
@@ -122,8 +108,8 @@ h3 {
   background-color: #2FDB00;
   transform: translateY(-2px);
 }
+
 .bg-image {
-  
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -163,9 +149,9 @@ h3 {
   width: 100%;
   cursor: pointer;
 }
-.remove-item{
+
+.remove-item {
   font-size: 26px;
   color: red;
   font-weight: 700;
- 
-}
+}/*# sourceMappingURL=Basket.css.map */

@@ -35,11 +35,12 @@
 // }
 
 // export default Blog;
-import React, { useEffect, useState } from "react";
 
+import React, { useEffect, useState } from "react";
 import { Card } from "antd";
 import { useNavigate } from "react-router-dom";
 import client from "../../api/api";
+import "../../assets/scss/Blog.scss";
 
 const { Meta } = Card;
 
@@ -60,11 +61,103 @@ function Blog() {
    }
 
   return (
-    <div className="container d-flex justify-content-center mb-5 mt-5">
+    <div className="container blog">
   
       <Card
+      className="cardBlog"
         hoverable
-        style={{ width: "60%" }}
+        style={{ width: "25%" }}
+        cover={<img alt={data.title} src={data.image} />}
+      >
+        <Meta title={data.title} className="pb-3" />
+        <p className="blog-date">{data.date}</p>
+        <p>{data.text}</p>
+        <a
+          className="blog_btn"
+          onClick={() => {
+            navigate("/blogdetail");
+          }}
+        >
+          Daha ətraflı
+        </a>
+      </Card>
+
+      <Card
+      className="cardBlog"
+        hoverable
+        style={{ width: "25%" }}
+        cover={<img alt={data.title} src={data.image} />}
+      >
+        <Meta title={data.title} className="pb-3" />
+        <p className="blog-date">{data.date}</p>
+        <p>{data.text}</p>
+        <a
+          className="blog_btn"
+          onClick={() => {
+            navigate("/blogdetail");
+          }}
+        >
+          Daha ətraflı
+        </a>
+      </Card>
+      <Card
+      className="cardBlog"
+        hoverable
+        style={{ width: "25%" }}
+        cover={<img alt={data.title} src={data.image} />}
+      >
+        <Meta title={data.title} className="pb-3" />
+        <p className="blog-date">{data.date}</p>
+        <p>{data.text}</p>
+        <a
+          className="blog_btn"
+          onClick={() => {
+            navigate("/blogdetail");
+          }}
+        >
+          Daha ətraflı
+        </a>
+      </Card>
+      <Card
+      className="cardBlog"
+        hoverable
+        style={{ width: "25%" }}
+        cover={<img alt={data.title} src={data.image} />}
+      >
+        <Meta title={data.title} className="pb-3" />
+        <p className="blog-date">{data.date}</p>
+        <p>{data.text}</p>
+        <a
+          className="blog_btn"
+          onClick={() => {
+            navigate("/blogdetail");
+          }}
+        >
+          Daha ətraflı
+        </a>
+      </Card>
+      <Card
+      className="cardBlog"
+        hoverable
+        style={{ width: "25%" }}
+        cover={<img alt={data.title} src={data.image} />}
+      >
+        <Meta title={data.title} className="pb-3" />
+        <p className="blog-date">{data.date}</p>
+        <p>{data.text}</p>
+        <a
+          className="blog_btn"
+          onClick={() => {
+            navigate("/blogdetail");
+          }}
+        >
+          Daha ətraflı
+        </a>
+      </Card>
+      <Card
+      className="cardBlog"
+        hoverable
+        style={{ width: "25%" }}
         cover={<img alt={data.title} src={data.image} />}
       >
         <Meta title={data.title} className="pb-3" />

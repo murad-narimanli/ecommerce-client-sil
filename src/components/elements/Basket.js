@@ -79,7 +79,6 @@ const Basket = () => {
     setBasket(null);
     Alert();
   };
-  
 
   return (
     <div className="container basket pt-5 pb-5">
@@ -92,7 +91,6 @@ const Basket = () => {
               <table className=" table table-bordered table-basket ">
                 <thead>
                   <tr>
-
                     <th>Şəkil</th>
                     <th>Ad</th>
                     <th>Qiymət</th>
@@ -154,7 +152,7 @@ const Basket = () => {
           ))}
           <Space wrap>
             <div>
-              <h3 id="totalPrice"  data-text="Total Price:">
+              <h3 id="totalPrice" data-text="Total Price:">
                 Total Price:
                 {basket.reduce(
                   (total, product) =>

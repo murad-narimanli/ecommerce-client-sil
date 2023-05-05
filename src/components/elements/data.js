@@ -123,7 +123,7 @@ export const productData2 = [
   {
     id: 3,
     imgUrl:
-      "https://www.tibb.az/uploads/resources/big/resource_20130612125426.png",
+      "https://pngimg.com/d/chocolate_PNG97211.png",
     discount: "20%",
     name: "Sokalad",
     beforePrice: 150,

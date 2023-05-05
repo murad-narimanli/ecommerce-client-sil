@@ -1,33 +1,32 @@
-$button-background-color: #2fdb00;
-$button-text-color: #fff;
-$button-opacity: 1;
 .blog-date {
   color: #2fdb00;
   font-weight: 500;
 }
+
 .blog_btn {
-  background-color: $button-background-color;
-  color: $button-text-color;
+  background-color: #2fdb00;
+  color: #fff;
   border: none;
   text-decoration: none;
   border-radius: 3px;
   padding: 8px 16px;
   font-size: 16px;
-  opacity: $button-opacity;
+  opacity: 1;
   cursor: pointer;
-
-  &:hover {
-    background-color: #2ee600;
-    opacity: 0.8;
-    color: $button-text-color;
-  }
 }
+.blog_btn:hover {
+  background-color: #2ee600;
+  opacity: 0.8;
+  color: #fff;
+}
+
 .blog_icon {
   font-size: 24px;
   color: white;
   display: flex;
   justify-content: end;
 }
+
 .detail_footer {
   padding: 5px;
   display: flex;
@@ -35,27 +34,16 @@ $button-opacity: 1;
   align-items: center;
   position: relative;
 }
+
 .back_icon {
   font-size: 20px;
   position: absolute;
   display: flex;
   left: 10px;
 }
+
 .blogdetail_btn {
   position: absolute;
   right: 10px;
   top: 15px;
-  $button-background-color: #2fdb00;
-}
-
-.blog{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 50px 90px;
-  .cardBlog{
-    margin-right: 70px;
-    margin-top: 50px;
-  }
-}
+}/*# sourceMappingURL=Blog.css.map */

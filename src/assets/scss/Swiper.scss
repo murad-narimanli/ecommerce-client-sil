@@ -6,8 +6,13 @@
   }
 }
 .slide {
+  padding: 20px 90px;
   margin-top: 70px;
   margin-bottom: 100px;
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
 
   .slideCard {
     display: flex;
@@ -15,17 +20,10 @@
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 350px;
-    span {
-      background-color: rgb(132, 191, 65);
-      font-size: 12px;
-      color: #fff;
-      padding: 2px 7px;
-      border-radius: 5px;
-      margin-left: 220px;
-    }
+    height: 280px;
+
     img {
-      width: 130px;
+      width: 100px;
       transition: 0.5s;
       &:hover {
         cursor: pointer;

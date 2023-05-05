@@ -1,0 +1,179 @@
+.about {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.about .header {
+  color: rgb(132, 191, 65);
+}
+.about .header h1 {
+  font-weight: 700;
+}
+.about .header img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about .about-container {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  padding: 35px 13px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.about .about-container .card {
+  position: relative;
+  width: 350px;
+  height: 180px;
+  transition: 0.5s;
+}
+.about .about-container .card:hover {
+  height: 450px;
+  animation-play-state: running;
+}
+.about .about-container .card:hover .lines::before {
+  animation-play-state: running;
+}
+.about .about-container .card:hover .imgBx {
+  top: 25px;
+  width: 200px;
+  height: 200px;
+}
+.about .about-container .card:hover .imgBx::before {
+  animation-play-state: running;
+}
+.about .about-container .card:hover .content .details {
+  transform: translate(0px);
+}
+.about .about-container .card:hover .content .details p {
+  opacity: 1;
+}
+.about .about-container .card .lines {
+  position: absolute;
+  inset: 0;
+  background: white;
+  overflow: hidden;
+}
+.about .about-container .card .lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 120px;
+  background: linear-gradient(transparent, rgb(132, 191, 65), rgb(132, 191, 65), rgb(132, 191, 65), transparent);
+  animation: animate 4s linear infinite;
+  animation-play-state: paused;
+}
+.about .about-container .card .lines::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: white;
+}
+.about .about-container .card .imgBx {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%);
+  background: #fff;
+  transition: 0.5s;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-container .card .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(transparent, rgb(132, 191, 65), rgb(132, 191, 65), rgb(132, 191, 65), transparent);
+  animation: animate2 6s linear infinite;
+  animation-play-state: paused;
+}
+.about .about-container .card .imgBx::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: white;
+}
+.about .about-container .card .imgBx i {
+  position: absolute;
+  font-size: 50px;
+  z-index: 1;
+  color: rgb(132, 191, 65);
+  transition: 0.5s;
+}
+.about .about-container .card .imgBx i:hover {
+  filter: invert(0);
+}
+.about .about-container .card .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.about .about-container .card .content .details {
+  padding: 30px 20px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(185px);
+}
+.about .about-container .card .content .details h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(231, 121, 43, 0.8078431373);
+}
+.about .about-container .card .content .details p {
+  color: #606168;
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+@media only screen and (max-width: 750px) and (min-width: 360px) {
+  .about .header {
+    flex-direction: column;
+  }
+  .about .header .text h3 {
+    font-size: 1.1rem;
+  }
+  .about .aboutcard {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1180px) and (min-width: 768px) {
+  .aboutcard {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Aboutus.css.map */
