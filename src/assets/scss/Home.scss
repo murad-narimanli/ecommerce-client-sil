@@ -1,3 +1,6 @@
+:where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light .ant-menu-item-selected, :where(.css-dev-only-do-not-override-1vtf12y).ant-menu-light>.ant-menu .ant-menu-item-selected {
+  background-color: rgb(108, 195, 46);
+}
 .ant-menu-submenu-popup {
   .ant-menu-vertical.ant-menu-sub {
     &:not([class*="-active"]) {
@@ -9,6 +12,17 @@ a {
   text-decoration: none !important;
 }
 .ant-menu {
+  .ant-menu-item {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1818;
+  }
+  
   .ant-menu-submenu-title {
     .ant-menu-title-content {
       overflow-y: none;

@@ -332,7 +332,7 @@ function Payment() {
           <br />
           <input
             type="text"
-            name="firstName"
+            name="fullName"
             required="required"
             onChange={handleChange}
           />
@@ -343,7 +343,7 @@ function Payment() {
           <br />
           <input
             type="email"
-            name="lastName"
+            name="email"
             required="required"
             onChange={handleChange}
           />
@@ -378,7 +378,8 @@ function Payment() {
             <option value="2">Nərimanov rayonu </option>
             <option value="3">Nəsimi rayonu</option>
             <option value="4">Nizami rayonu </option>
-            <option value="5">Sabunçu rayonu </option>             <option value="6">Səbail rayonu </option>
+            <option value="5">Sabunçu rayonu </option>           
+              <option value="6">Səbail rayonu </option>
            <option value="7">Suraxanı rayonu </option>
                        <option value="8">Pirallahı rayonu </option>
           <option value="9">Xətai rayonu</option>
