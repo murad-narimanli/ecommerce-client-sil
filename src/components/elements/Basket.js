@@ -29,7 +29,7 @@ const Basket = () => {
     );
     document.getElementById(
       "totalPrice"
-    ).innerHTML = `Total Price: ${total.toFixed(2)}`;
+    ).innerHTML = `Ümumi qiymət: ${total.toFixed(2)}`;
   };
   //increment
   let increment = (product) => {
@@ -117,7 +117,7 @@ const Basket = () => {
                     </td>
                     <td>
                       <div className="d-flex justify-content-center align-items-center pt-3">
-                      <h2 className="">${product.price}</h2>
+                      <h2 className="">{product.price} <span>azn</span></h2>
                       </div>
                     </td>
                     <td>
@@ -152,14 +152,16 @@ const Basket = () => {
           ))}
           <Space wrap>
             <div>
-              <h3 id="totalPrice" data-text="Total Price:">
-                Total Price:
+              <h5 id="totalPrice" data-text="Ümumi qiymət:"> 
+
+               Ümumi qiymət: 
                 {basket.reduce(
                   (total, product) =>
                     total + product.price * product.count.toFixed(2),
-                  0
+                  0 
                 )}
-              </h3>
+               azn
+               </h5>
               <Button
                 type="primary"
                 onClick={() => {

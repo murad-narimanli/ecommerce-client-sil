@@ -90,7 +90,7 @@ function ProductItem() {
             <img className="card-img-top" src={product.img} alt="Card image" />
             
               <h4 className="card-title">{product.name}</h4>
-              <h5 className="card-text">${product.price}</h5>
+              <h5 className="card-text">{product.price} <span>azn</span></h5>
               <div className="btnCont">
                 <div onClick={() => handleLike(product)} data-id={product.id}>
                   <span onClick={() => addWishlist(product)}>
@@ -118,3 +118,6 @@ function ProductItem() {
 }
 
 export default ProductItem;
+
+
+
