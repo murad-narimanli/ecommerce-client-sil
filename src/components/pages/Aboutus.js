@@ -22,11 +22,13 @@ function Aboutus() {
   return (
     <div className="container about">
       <div className="header d-flex align-items-center justify-content-between">
-        <div className="textb">
-          {/* <h1>RİFAHINIZ</h1>
+        <div >
+            {/* <h1>RİFAHINIZ</h1>
           <h1>MƏQSƏDİMİZDİR</h1>
           <h3>Hər Zaman Xidmətinizdəyik!</h3> */}
-          <div dangerouslySetInnerHTML={{ __html: data.title }} />
+          
+          
+          <div dangerouslySetInnerHTML={{ __html: data.title }} className="textb2" />
         </div>
 
         <img src={Image.ShoppingGif} />
