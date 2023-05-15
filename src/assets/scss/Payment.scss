@@ -1,17 +1,23 @@
 .paymentContainer{
 
   h1{
+    text-align: center;
     font-size: 34px;
   }
   padding: 20px 90px;
 }
 .payment {
   width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
   min-height: 800px;
   border: 1px solid rgb(132, 191, 65);
   margin-top: 20px;
   margin-bottom: 70px;
   padding: 20px 30px;
+  
   background: rgb(248, 251, 245);
   h4 {
     margin-bottom: 20px;
