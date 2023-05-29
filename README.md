@@ -34,3 +34,39 @@ This project aims to create a web application for an e-commerce website. As part
 ## Contact Page
 
 ![Contact Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/057bb503-6c3e-4685-8dee-09312ace6c6c)
+
+## Installation
+
+Follow the steps below to install and run the project on your local machine:
+
+1. Clone the repository to your local machine: git clone https://github.com/murad-narimanli/ecommerce-client-sil.git
+
+2. Navigate to the project directory: cd ecommerce-client-sil
+ 
+3. Install the project dependencies using npm or yarn: npm install or yarn install
+
+4. Start the development server: npm start or yarn start
+
+5. Open your browser and visit `http://localhost:3000` to view the application.
+
+6. Enjoy shopping on our e-commerce website!
+
+## Using tool
+
+This project is built using the following tools and technologies:
+- Front-end:
+1.CSS
+2.SCSS
+3.Ant Design
+4.Bootstrap
+5.React
+
+- Database:JSON Placeholder
+- Version Control: Git
+
+
+
+
+
+
+
