@@ -1,7 +1,7 @@
 # About Project
 
 This project aims to create a web application for an e-commerce website. As part of the business model, it offers customers a wide range of products and facilitates their online shopping experience.
-## Admin panel repo of the project:https://github.com/murad-narimanli/ecommerce-admin-sil.git
+- Admin panel repo of the project:https://github.com/murad-narimanli/ecommerce-admin-sil.git
 
 ## Home Page
 
