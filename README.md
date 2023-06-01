@@ -6,35 +6,32 @@ This project aims to create a web application for an e-commerce website. As part
 ## Home Page
 <img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/8f473b54-490c-45db-93de-9d32e26a0fab"/>
 <img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/05f5cb76-3dc3-492d-bfbb-a85e18888d4f"/>
-<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/70188ed9-0faa-499c-9a3a-8c06c906dc03"/>
 
 ## Footer
 
-![Footer](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/6c28b6f2-b7cf-46e3-a691-d48b381d8446)
+<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/70188ed9-0faa-499c-9a3a-8c06c906dc03"/>
 
 ## About Page
-
-![About Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/226cb6e4-2467-4514-a34c-932c662bdaee)
+<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/24595850-a29a-40cf-be75-5bd079de2c58"/>
 
 ## Blog Page
 
-![Blog Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/fb97edcf-39bc-4902-9a49-099d6683a5de)
+<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/edb1b6ce-0fe3-46f5-a03f-7a0332b1afe4"/>
 
 ## Product Page
 
-![Product Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/10e76ce1-b914-4497-b0bf-38ebbde4de12)
+<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/d33cc3c7-1e0f-4670-9082-7ba5a6d32d5f"/>
 
 ## Basket Page
 
-![Basket Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/7374d3e9-9270-4a98-9d99-1ba485e2ff24)
+<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/2d7b79bc-dbe6-4da6-8769-827fb4703bf9"/>
 
 ## Confirm the order Page
-
-![Confirm the order Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/1d7a403b-aaf4-4d20-8a62-f622584c5ffc)
+<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/d123e3de-652e-4e96-a01c-0eb3d93b1331"/>
 
 ## Contact Page
 
-
+<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/4ec3ee16-2aa6-49c6-8091-b00951ed4eb4">
 
 
 ## Installation
