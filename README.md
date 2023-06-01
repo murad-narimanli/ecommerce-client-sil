@@ -4,7 +4,7 @@ This project aims to create a web application for an e-commerce website. As part
 - Admin panel repo of the project:https://github.com/murad-narimanli/ecommerce-admin-sil.git
 
 ## Home Page
-<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/e43e464d-d537-4e4a-94c1-b1af056917e3">
+<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/8f473b54-490c-45db-93de-9d32e26a0fab"/>
 ![Home Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/e43e464d-d537-4e4a-94c1-b1af056917e3)
 ![Home Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/51072ef4-dbc8-46a2-9d2f-16541514bd3d)
 
@@ -33,9 +33,9 @@ This project aims to create a web application for an e-commerce website. As part
 ![Confirm the order Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/1d7a403b-aaf4-4d20-8a62-f622584c5ffc)
 
 ## Contact Page
-<img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/8f473b54-490c-45db-93de-9d32e26a0fab"/> ![Screenshot 2023-05-29 001639](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/8f473b54-490c-45db-93de-9d32e26a0fab)
 
-![Contact Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/057bb503-6c3e-4685-8dee-09312ace6c6c)
+
+
 
 ## Installation
 
