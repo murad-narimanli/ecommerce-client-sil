@@ -5,7 +5,7 @@ This project aims to create a web application for an e-commerce website. As part
 
 ## Home Page
 <img src="https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/e43e464d-d537-4e4a-94c1-b1af056917e3">
-![Home Page]()
+![Home Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/e43e464d-d537-4e4a-94c1-b1af056917e3)
 ![Home Page](https://github.com/murad-narimanli/ecommerce-client-sil/assets/100444320/51072ef4-dbc8-46a2-9d2f-16541514bd3d)
 
 ## Footer
